@@ -1,0 +1,63 @@
+body	{ 
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+header {
+	opacity: 0.5;
+}
+
+footer {
+	color: #ccc;
+	background-color: #808080;
+}
+
+main {
+	max-width: 800px;
+	margin-left: 25%;
+	max-width: 800px;
+}
+
+h1 {
+	background-color: #ccc;
+	font-family: calibri, helvetica, sans-serif;
+}
+
+nav {
+	text-align: center;
+	position: fixed;
+	top: 10em;
+	width: 10%;
+}
+
+nav ul {
+	font-family: tahoma;
+	text-align: center;
+	list-style-type: none;
+}
+
+nav li {
+	display: block;
+	padding: 10px;
+}
+
+nav a:hover {
+	display:block;
+	text-decoration: none;
+} 
+
+ul {
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #000;
+	color: #ccc;
+	text-decoration: none;
+}
