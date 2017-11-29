@@ -1,5 +1,31 @@
-body	{ 
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+/* ------------------------------------- */
+
+
+/* Basic Setup for the pages 						 */
+
+
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body  {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    /*render fonts in a more perfect manner */
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 0;
 }
 
 header {
@@ -60,4 +86,103 @@ a:hover {
 	background-color: #000;
 	color: #ccc;
 	text-decoration: none;
+}
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+        margin: 0;
+	}
+}
+
+.width-of-two {
+    width: 49.2%;
+}
+
+.width-two-of-two {
+    width: 100%;
+}
+
+.width-of-four {
+    width: 23.8%;
+}
+
+.width-two-of-three {
+	width: 66.13%;
+}
+
+.width-of-three {
+	width: 32.26%;
+}
+
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+
+
+/*----Heading----*/
+
+
+/* ------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/smoke.jpg); /*reperesnts a linear gradient of colours. Rgba specifies the opacity of the text */
+    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -70%);
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    /* To fix the position */
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 250%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    content: " "
+}
+
+.heading {
+    color: 000;
 }

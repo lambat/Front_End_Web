@@ -1,0 +1,172 @@
+/* Big tablets to 1200px, for widths smaller than the 1140px row that has been set
+   in the other style sheet */
+@media only screen and (max-width: 1200px){
+
+h1 { 
+     margin-top: 50px;
+     margin-left: 20px;
+   }
+
+.hero-text-box {
+     width: 100%;
+     padding: 0, 2%;
+   }
+
+.plan-box{
+     width: 85%;
+     margin-left: 0%;
+   }
+
+    .btn:link,
+    .btn:visited
+    {
+      margin-left: 25px;
+    }
+
+    .row { padding: 0 2%; }
+
+}
+
+/* Small tablets to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+
+  body { font-size: 17px; }
+  section { padding: 60px 0; }
+  h1 { margin-left: 15px; }
+
+  .btn:link,
+  .btn:visited
+  {
+    margin-left: 25px;
+  }
+
+  .para {
+      width: 80%;
+      margin-left: 10%;
+  }
+
+  .btn-app  {
+      float: right;
+
+  }
+
+  .plan-box{
+      width: 100%;
+      margin-left: 0%;
+  }
+
+  .plan-price{ font-size: 250%; }
+
+  .contact-form{ width: 80%; }
+
+  .footer-nav{ font-size: 95%; }
+
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+  body { font-size: 16px; }
+  section { padding: 30px 0; }
+
+  .row,
+  .hero-text-box { padding: 0% 4%; }
+  .col { width: 100%;
+         margin: 0 0 4% 0;
+        }
+
+  .mobile-nav-icon { display: inline-block; }
+
+    .main-nav { float: left; }
+
+    .main-nav li {
+        display: block;
+    }
+
+
+
+    .main-nav li a:link,
+    .main-nav li a:visited{
+
+        display: block;
+        border: 0;
+        hover: none;
+        padding: 10px 0;
+        font-size: 70%;
+    }
+
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon   { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+
+  .city-feature{
+      float: inherit;
+  }
+
+
+  h1 {font-size: 180%; }
+  h2 {font-size: 140%; }
+
+  .app-screen {
+      width: 30%;
+  }
+
+  .para {
+      width: 100%;
+      margin-left: 0%;
+  }
+
+  .btn-app{
+      margin-top: 10px;
+  }
+
+  .testimonials{
+      background-image: -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(images/vape-clouds.png);
+      background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(images/vape-clouds.jpg);
+      color: #fff; /* White colored font so it can be seen clearly with the image*/
+  }
+
+  .works-step {
+      color: #e67e22;
+      border: 2px solid #e67e22;
+      border-radius: 50%;
+      height: 34px;
+      width: 34px;
+      text-align: center;
+      font-size: 100%;
+      padding: 4px;
+      float: left;
+      margin-right: 15px;
+  }
+
+  .fa-facebook-square,
+  .fa-twitter-square,
+  .fa-instagram {
+
+          padding-top: 7px;
+
+  }
+
+}
+
+  /* small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+
+  h2 {font-size: 120%; }
+  p {font-size: 90%; }
+  .footer-nav{ font-size: 93%; }
+  .testimonials{
+      background-image: -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(images/vape-clouds.png);
+      background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(images/vape-clouds.jpg);
+      margin-top: 315%;
+      color: #fff; /* White colored font so it can be seen clearly with the image*/
+  }
+
+  .testimonials{
+      margin-top: -300px;
+
+  }
+
+}
