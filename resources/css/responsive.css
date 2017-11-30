@@ -1,21 +1,35 @@
+/* GLOBAL AND MOBILE STYLES FIRST */
+
+/*
+  - this applies to any screen sizes under 500px
+  - if you leave the width off, sections will automatically fill the full page width
+  - no margins and little or no padding
+*/
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+body {
+  background: #fff
+
+
 /* Big tablets to 1200px, for widths smaller than the 1140px row that has been set
    in the other style sheet */
 @media only screen and (max-width: 1200px){
 
-h1 { 
-     margin-top: 50px;
-     margin-left: 20px;
-   }
+  h1 { margin-top: 50px;
+       margin-left: 20px;
+     }
 
-.hero-text-box {
-     width: 100%;
-     padding: 0, 2%;
-   }
+  .hero-text-box {
+        width: 100%;
+        padding: 0, 2%;
 
-.plan-box{
-     width: 85%;
-     margin-left: 0%;
-   }
+    }
+
+    .plan-box{
+        width: 85%;
+        margin-left: 0%;
+    }
 
     .btn:link,
     .btn:visited
@@ -143,6 +157,7 @@ h1 {
 
   .fa-facebook-square,
   .fa-twitter-square,
+  .fa-google-plus-square,
   .fa-instagram {
 
           padding-top: 7px;
@@ -170,3 +185,38 @@ h1 {
   }
 
 }
+;
+}  
+section {
+	display: inline-block;
+	width: 44%;
+}  
+  /* 
+    - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
+    - add any hover states here
+    - increase font sizes
+    - add margins and padding to space things out
+    - decrease width of sections
+    - add `display: inline-block;` so that sections will float next to each other
+  */
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+body {
+  background: #fff;
+}  	
+section {
+	display: inline-block;
+	width: 22%;
+}
+  /*
+    - applies to screens larger than 999px only
+    - add a max-width to your main section
+    - further decrease size of sections
+    - increase size of headings and global fonts
+  */
+}
+/* END SECOND BREAKPOINT */

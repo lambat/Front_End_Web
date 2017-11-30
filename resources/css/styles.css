@@ -1,0 +1,450 @@
+/* GLOBAL AND MOBILE STYLES FIRST */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body  {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    /*render fonts in a more perfect manner */
+    font-size: 20px;
+    overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+header {
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
+    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+    background-size: cover;
+    height: 100vh;
+	opacity: 0.6;
+}
+
+nav {
+	text-align: center;
+	position: fixed;
+	top: 20em;
+	width: 10%;
+	background-color: #000;
+	opacity: 0.6;
+	color: #ddd;
+	display: block;
+}
+
+nav ul {
+	font-family: tahoma;
+	text-align: center;
+	list-style-type: none;
+}
+
+nav li {
+	display: block;
+	padding: 10px;
+}
+
+nav a:hover {
+	display:block;
+	text-decoration: none;
+} 
+
+ul {
+	text-decoration: none;
+	list-style-type: none;	
+}
+
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #000;
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:visited {
+	color:inherit;
+}
+
+#menu {
+  background: #000;
+  display: block;
+}
+.show-menu {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1em;
+}
+
+main {
+	max-width: 800px;
+	margin-left: 25%;
+	max-width: 800px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+header {
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
+    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+    background-size: cover;
+    height: 100vh;
+	opacity: 0.6;
+}
+
+nav {
+	text-align: center;
+	position: fixed;
+	top: 20em;
+	width: 10%;
+	background-color: #000;
+	opacity: 0.6;
+	color: #ddd;
+	display: block;
+}
+
+  h1 {
+    font-size: 2em;
+  }
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section {
+	display: inline-block;
+    color: #ddd;
+  }
+  section:hover {
+    background: #666;
+  }
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+	
+nav {
+	text-align: center;
+	position: fixed;
+	top: 20em;
+	width: 10%;
+	background-color: #000;
+	opacity: 0.6;
+	color: #ddd;
+	display: block;
+}
+
+nav ul {
+	font-family: tahoma;
+	text-align: center;
+	list-style-type: none;
+}
+
+nav li {
+	display: block;
+	padding: 10px;
+}
+
+nav a:hover {
+	display:block;
+	text-decoration: none;
+} 
+
+ul {
+	text-decoration: none;
+	list-style-type: none;	
+}
+
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #000;
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:visited {
+	color:inherit;
+}
+
+.hvr-icon-hang {
+	margin-top: 30px;
+	border-radius: 200px;
+	background-color: #000080;
+	color: #fff;
+	padding: 5px 20px;
+}
+
+#menu {
+  padding: 1em;
+  background: #000;
+  display: block;
+}
+.hide-menu {
+  display: block;
+}
+
+main {
+	max-width: 800px;
+	margin-left: 25%;
+	max-width: 800px;
+}
+
+
+/* ------------------------------------- */
+
+
+/* 		      Heading   	        	  			 */
+
+
+/* ------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
+    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+    background-size: cover;
+    height: 100vh;
+	opacity: 0.6;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 250%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+	background-color: #ccc;
+	font-family: calibri, helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    content: " "
+}
+
+.heading {
+    color: 000;
+}
+
+.logo {
+    width: 100px;
+	text-align: center;
+}
+
+intro { 
+    line-height: 10px;
+	padding: 10px;
+}
+
+
+
+/* ------------------------------------- */
+
+
+/* 		      Footer   	        	  			 */
+
+
+/* ------------------------------------- */
+
+footer{
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none; /* No underlining*/
+    border: 0; /* We get rid of the previous a links that have a border */
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+      font-size: 140%;
+}
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram {
+      transition: color 0.3s;
+}
+
+
+.fa-facebook-square:hover{
+    background: #3B5998;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    color: white;
+}
+
+
+.fa-twitter-square:hover{
+    background: #55ACEE;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    color: white;
+}
+
+.fa-instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+}
+footer p {
+    color: #ddd;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Awesome Font Button Animation */
+
+/* Icon Hang */
+@-webkit-keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+.hvr-icon-hang {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  transition-duration: 0.3s;
+}
+.hvr-icon-hang:before {
+  content: "\f078";
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
+  -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+  animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+/* END SECOND BREAKPOINT */
