@@ -108,17 +108,6 @@ body {
         font-size: 70%;
     }
 
-    .sticky .main-nav { margin-top: 10px; }
-
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited { padding: 10px 0; }
-    .sticky .mobile-nav-icon   { margin-top: 10px; }
-    .sticky .mobile-nav-icon i { color: #555; }
-
-  .city-feature{
-      float: inherit;
-  }
-
 
   h1 {font-size: 180%; }
   h2 {font-size: 140%; }
@@ -157,7 +146,6 @@ body {
 
   .fa-facebook-square,
   .fa-twitter-square,
-  .fa-google-plus-square,
   .fa-instagram {
 
           padding-top: 7px;
