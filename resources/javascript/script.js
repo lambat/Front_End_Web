@@ -1,7 +1,7 @@
 (function(){
 
   let menuButton = document.getElementById("menu");
-  let navMenu = document.getElementById("nav-menu");
+  let navMenu = document.getElementById("navMenu");
 
   menuButton.addEventListener("click", toggleMenu);
 
