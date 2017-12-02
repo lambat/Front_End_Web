@@ -6,7 +6,7 @@
   - no margins and little or no padding
 */
 
-	
+
 /* ------------------------------------- */
 
 
@@ -46,23 +46,34 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
-	margin-top: 10px;
+	  margin-top: 10px;
     margin-bottom: 20px;
 }
 
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+    color: 000080;
 }
 
 .heading {
     color: 000;
-	background-color: 000;
+	  background-color: 000;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: ##000080;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    content: " ";
 }
 
 .logo {
     width: 100px;
-	text-align: center;
+	  text-align: center;
 }
 
 /* ------------------------------------- */
@@ -81,11 +92,12 @@ nav {
 	background-color: #000;
 	opacity: 0.6;
 	color: #ddd;
+  right: 0px;
 }
 
 nav ul {
 	font-family: tahoma;
-	text-align: center; 
+	text-align: center;
 	list-style-type: none;
 }
 
@@ -97,11 +109,11 @@ nav li {
 nav a:hover {
 	display:block;
 	text-decoration: none;
-} 
+}
 
 ul {
 	text-decoration: none;
-	list-style-type: none;	
+	list-style-type: none;
 }
 
 .hvr-icon-hang {
@@ -117,17 +129,9 @@ ul {
 }
 
 #menu {
-  padding: 1em;
-  background: #000;
+  padding: 2em;
+  background: #000;   /*#menu is the hamburger icon */
   display: block;
-}
-
-#nav-menu{
-	display:block;
-}
-
-#navMenu{
-	display:none;
 }
 
 .show-menu {
@@ -140,31 +144,18 @@ main {
 	max-width: 800px;
 }
 
-.section-1 {
-	text-align: center;
-	width: 350px;
-    position:relative;
-}
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-	display:inline-block;
-}
-
-.row:before,
-.row:after {
-    content:"";
-    display:table;
-}
-.row:after {
-    clear:both;
-}
-
 .photo {
 	width: auto;
     height: auto;
 }
+/*
+.left {
+  color: #555;
+}
+
+.right {
+  color: #555;
+}*/
 
 /* ------------------------------------- */
 
@@ -232,7 +223,7 @@ footer{
     background: #3B5998;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     color: white;
-	
+
 }
 
 .fa-twitter-square:hover{
@@ -364,6 +355,7 @@ nav {
 	opacity: 0.6;
 	color: #ddd;
 	display: block;
+  right: 0px;
 }
 
 nav ul {
@@ -379,7 +371,7 @@ nav li {
 
 ul {
 	text-decoration: none;
-	list-style-type: none;	
+	list-style-type: none;
 }
 
 a:link {
@@ -390,8 +382,6 @@ a:link {
 a:visited {
 	color: #fff;
 }
-
-
 
 h1 {
   font-size: 1.5em;
@@ -434,23 +424,31 @@ nav {
     width: 90%;
     margin: 0 auto;
   }
-  
+
  body {
   background: #fff;
 
 }
 
-#navMenu{
-	display:block;
-}
+  h2:after {
+      display: block;
+      height: 2px;
+      background-color: #000080;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 30px;
+      content: " ";
+  }
 
 }
+
+
 /* END SECOND BREAKPOINT */
 
 
 /* THIRD BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
-	
+
 /* ------------------------------------- */
 
 
@@ -464,13 +462,13 @@ header {
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
     background-size: cover;
     height: 100vh;
-	opacity: 0.6;
+	  opacity: 0.6;
 }
 
 h1, h2, h3 {
     font-weight: 300;
     text-transform: uppercase;
-	text-align: center;
+	  text-align: center;
 }
 
 h1 {
@@ -480,8 +478,8 @@ h1 {
     font-size: 250%;
     word-spacing: 4px;
     letter-spacing: 1px;
-	background-color: #ccc;
-	font-family: calibri, helvetica, sans-serif;
+	  background-color: #ccc;
+	  font-family: calibri, helvetica, sans-serif;
 }
 
 h2 {
@@ -490,23 +488,35 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
-	margin-top: 10px;
+	  margin-top: 10px;
     margin-bottom: 20px;
+    color: #555;
 }
 
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+    color: #000080;
 }
 
 .heading {
     color: 000;
-	background-color: 000;
+	  background-color: 000;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #000080;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    content: " ";
 }
 
 .logo {
     width: 100px;
-	text-align: center;
+	  text-align: center;
 }
 
 /* ------------------------------------- */
@@ -519,18 +529,15 @@ h3 {
 
 nav {
 	text-align: center;
-	position: fixed;
-	top: 20em;
+	top: 15em;
 	width: 10%;
 	background-color: #000;
 	opacity: 0.6;
 	color: #ddd;
-}
-
-nav ul {
+	background: #000;
 	font-family: tahoma;
-	text-align: center; 
-	list-style-type: none;
+	position: fixed;
+  right: 0px;
 }
 
 nav li {
@@ -541,19 +548,11 @@ nav li {
 nav a:hover {
 	display:block;
 	text-decoration: none;
-} 
+}
 
 ul {
 	text-decoration: none;
-	list-style-type: none;	
-}
-
-.hvr-icon-hang {
-	margin-top: 30px;
-	border-radius: 200px;
-	background-color: #000080;
-	color: #000;
-	padding: 5px 20px;
+	list-style-type: none;
 }
 
 #menu {
@@ -565,8 +564,24 @@ ul {
   display: block;
 }
 
-#navMenu{
-	display:block;
+.iconcolour {
+  color: #000080;
+}
+
+.box {
+  width: 20%;
+  float: left;
+  display: block;
+  margin: 1% 0 1% 1.6%;
+  padding: 1%;
+}
+
+.hvr-icon-hang {
+	margin-top: 30px;
+	border-radius: 200px;
+	background-color: #000080;
+	color: #000;
+	padding: 5px 20px;
 }
 
 main {
@@ -575,32 +590,39 @@ main {
 	max-width: 800px;
 }
 
-.section-1 {
-	text-align: center;
-	width: 350px;
-    position:relative;
-}
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-	display:inline-block;
-}
-
-.row:before,
-.row:after {
-    content:"";
-    display:table;
-}
-.row:after {
-    clear:both;
-}
-
 .photo {
-	width: auto;
-    height: auto;
+	width: 10px;
+	margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
+.overlay {
+	position: absolute;
+	left: 54px;
+	bottom: 20px;
+	background-color: #000080;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.8;
+	font-family: tahoma;
+}
+
+.overlay:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.category_box {
+	position: relative;
+	width: 50%;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
 /* ------------------------------------- */
 
 
@@ -667,7 +689,7 @@ footer{
     background: #3B5998;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     color: white;
-	
+
 }
 
 .fa-twitter-square:hover{
@@ -763,5 +785,6 @@ footer p {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
 }
 /* END THIRD BREAKPOINT */
