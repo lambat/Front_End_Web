@@ -19,10 +19,14 @@
 
 })();
 
-          function myMap() {
-          var mapProp= {
-              center:new google.maps.LatLng(41.653419,-73.577499),
-              zoom:5,
-          };
-          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-          }
+       function initMap() {
+        let location = {lat: 52.636576, lng: -1.113813};
+        let map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: location
+        });
+        let marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
