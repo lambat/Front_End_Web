@@ -457,6 +457,17 @@ nav {
 
 /* ------------------------------------- */
 
+html,
+body  {
+    background-color: #fff;
+    font-family: 'Lato', 'Arial';
+    font-weight: 300;
+    text-rendering: optimizeLegibility; /*render fonts in a more perfect manner*/
+    font-size: 20px;
+    overflow-x: hidden;
+	  scroll-behavior: smooth;
+}
+
 header {
     background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
@@ -572,16 +583,20 @@ ul {
   width: 20%;
   float: left;
   display: block;
-  margin: 1% 0 1% 1.6%;
+  margin: 2% 0 2% 1.6%;
   padding: 1%;
+  background-color: #F0F0F0;
+  text-align: left;
 }
 
 .hvr-icon-hang {
-	margin-top: 30px;
+  left: 50px;
+	margin-top: 100px;
 	border-radius: 200px;
 	background-color: #000080;
 	color: #000;
 	padding: 5px 20px;
+  margin-bottom: 7px;
 }
 
 main {
@@ -600,8 +615,8 @@ main {
 
 .overlay {
 	position: absolute;
-	left: 54px;
-	bottom: 20px;
+	left: 41px;
+	bottom: 10px;
 	background-color: #000080;
 	padding: 5px 10px;
 	font-size: 14px;
@@ -619,15 +634,13 @@ main {
 	position: relative;
 	width: 50%;
 	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
 	margin-bottom: 20px;
 }
 
 /* ------------------------------------- */
 
 
-/* 		  Testimonials Section 		  			 */
+/* 		  Feedback Section 		  			 */
 
 
 /* ------------------------------------- */
@@ -639,6 +652,7 @@ blockquote {
     line-height: 145%;
     position: relative;
     margin-top: 40px;
+    background-color: #F0F0F0;
 }
 
 blockquote::before {
@@ -664,24 +678,90 @@ cite img {
     vertical-align: middle;
 }
 
-.row {
-    max-width: 1140px;
+.quote {
+  width: 10px;
+}
+
+section {
+  line-height: 30px;
+  /*background-color: #F0F0F0;*/
+}
+
+.center {
+  text-align: center;
+  line-height: 40px;
+}
+
+/* ------------------------------------- */
+
+
+/* 		           Form   	        	  	 */
+
+
+/* ------------------------------------- */
+
+.btn-full:link, .btn-full:visited, input[type=submit] {
+    background-color: #000080;
+    border: 1px solid #000080;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:link, .btn:visited, input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-bottom: 10px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #000;
+}
+
+.btn-full:hover,
+.btn-full:active,
+{
+    border: 1px solid #fff;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.contact-form{
+    width: 90%;
     margin: 0 auto;
 }
 
-.width-of-three {
-	width: 32.26%;
+input[type=text],
+input[type=email],
+select,
+textarea{
+      width: 100%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
 }
 
-.col {
-	display: block;
-	margin: 1% 0 1% 1.6%;
+textarea {
+    height: 100px;
 }
 
-.quote {
-  width: 10px;
-
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
 }
+
+*:focus {outline: none;} /* This is so that the outline on each border in a field is not visible */
 
 /* ------------------------------------- */
 
@@ -767,6 +847,10 @@ footer p {
     color: #ddd;
     text-align: center;
     margin-top: 20px;
+}
+
+.copyright {
+  text-align: center;
 }
 
 /* Awesome Font Button Animation */
