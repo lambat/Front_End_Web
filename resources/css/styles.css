@@ -3,7 +3,6 @@
 /*
   - this applies to any screen sizes under 500px
   - if you leave the width off, sections will automatically fill the full page width
-  - no margins and little or no padding
 */
 
 
@@ -530,6 +529,10 @@ h2:after {
 	  text-align: center;
 }
 
+.intro {
+  font-size: 16px;
+}
+
 /* ------------------------------------- */
 
 
@@ -579,14 +582,25 @@ ul {
   color: #000080;
 }
 
+/* ------------------------------------- */
+
+
+/* 		      About Us Section 		  			 */
+
+
+/* ------------------------------------- */
 .box {
   width: 20%;
+  margin-bottom: 20px;
   float: left;
   display: block;
   margin: 2% 0 2% 1.6%;
   padding: 1%;
   background-color: #F0F0F0;
   text-align: left;
+  font-size: 18px;
+  margin: 10px 1%;
+  margin-left: 3%;
 }
 
 .hvr-icon-hang {
@@ -599,10 +613,16 @@ ul {
   margin-bottom: 7px;
 }
 
+/* ------------------------------------- */
+
+
+/* 		      Products Section 		  			 */
+
+
+/* ------------------------------------- */
+
 main {
-	max-width: 800px;
 	margin-left: 25%;
-	max-width: 800px;
 }
 
 .photo {
@@ -635,6 +655,32 @@ main {
 	width: 50%;
 	min-height: 1px;
 	margin-bottom: 20px;
+}
+
+
+/* ------------------------------------- */
+
+
+/* 		      Currently Trending		  		 */
+
+
+/* ------------------------------------- */
+
+
+.special_offer {
+    background: #e25263;
+}
+
+.pro_message {
+    padding: 10px 20px;
+    top: 10px;
+    right: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 /* ------------------------------------- */
