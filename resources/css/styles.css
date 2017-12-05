@@ -14,12 +14,29 @@
 
 /* ------------------------------------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body  {
+    background-color: #fff;
+    font-family: 'Lato', 'Arial';
+    font-weight: 300;
+    text-rendering: optimizeLegibility; /*render fonts in a more perfect manner*/
+    font-size: 20px;
+    overflow-x: hidden;
+	  scroll-behavior: smooth;
+}
+
 header {
     background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
     background-size: cover;
     height: 100vh;
-	opacity: 0.6;
+	  opacity: 0.6;
 }
 
 h1, h2, h3 {
@@ -35,8 +52,8 @@ h1 {
     font-size: 250%;
     word-spacing: 4px;
     letter-spacing: 1px;
-	background-color: #ccc;
-	font-family: calibri, helvetica, sans-serif;
+	  background-color: #ccc;
+	  font-family: calibri, helvetica, sans-serif;
 }
 
 h2 {
@@ -73,6 +90,21 @@ h2:after {
 .logo {
     width: 100px;
 	  text-align: center;
+}
+
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #fff;
+}
+
+main {
+	max-width: 800px;
+	margin-left: 25%;
+	max-width: 800px;
 }
 
 /* ------------------------------------- */
@@ -123,14 +155,14 @@ ul {
 	padding: 5px 20px;
 }
 
-.hide-menu {
-  display: block;
-}
-
 #menu {
   padding: 2em;
   background: #000;   /*#menu is the hamburger icon */
   display: block;
+}
+
+.list-menu {
+	display: block;
 }
 
 .show-menu {
@@ -147,14 +179,6 @@ main {
 	width: auto;
     height: auto;
 }
-/*
-.left {
-  color: #555;
-}
-
-.right {
-  color: #555;
-}*/
 
 /* ------------------------------------- */
 
@@ -320,80 +344,6 @@ footer p {
   animation-direction: normal, alternate;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body  {
-    background-color: #fff;
-    font-family: 'Lato', 'Arial';
-    font-weight: 300;
-    text-rendering: optimizeLegibility; /*render fonts in a more perfect manner*/
-    font-size: 20px;
-    overflow-x: hidden;
-	scroll-behavior: smooth;
-}
-
-header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
-    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
-    background-size: cover;
-    height: 100vh;
-	opacity: 0.6;
-}
-
-nav {
-	text-align: center;
-	position: fixed;
-	top: 20em;
-	width: 10%;
-	background-color: #000;
-	opacity: 0.6;
-	color: #ddd;
-	display: block;
-  right: 0px;
-}
-
-nav ul {
-	font-family: tahoma;
-	text-align: center;
-	list-style-type: none;
-}
-
-nav li {
-	display: block;
-	padding: 10px;
-}
-
-ul {
-	text-decoration: none;
-	list-style-type: none;
-}
-
-a:link {
-	color: #fff;
-	text-decoration: none;
-}
-
-a:visited {
-	color: #fff;
-}
-
-h1 {
-  font-size: 1.5em;
-  margin: 0;
-  padding: 1em;
-}
-
-main {
-	max-width: 800px;
-	margin-left: 25%;
-	max-width: 800px;
-}
-
 /* END FIRST BREAKPOINT */
 
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
@@ -416,36 +366,49 @@ nav {
 	color: #ddd;
 }
 
-  h1 {
+h1  {
     font-size: 2em;
-  }
-  main {
+}
+
+main {
     width: 90%;
     margin: 0 auto;
   }
 
  body {
   background: #fff;
+}
+
+h2:after {
+   display: block;
+   height: 2px;
+   background-color: #000080;
+   width: 100px;
+   margin: 0 auto;
+   margin-top: 30px;
+   content: " ";
+}
+
+#menu {
+  padding: 2em;
+  background: #000;   /*#menu is the hamburger icon */
+  display: none;
+}
+
+.list-menu {
+	display: block;
+}
+
+.show-menu {
+  display: block;
+}
 
 }
 
-  h2:after {
-      display: block;
-      height: 2px;
-      background-color: #000080;
-      width: 100px;
-      margin: 0 auto;
-      margin-top: 30px;
-      content: " ";
-  }
-
-}
+/* END FIRST BREAKPOINT */
 
 
-/* END SECOND BREAKPOINT */
-
-
-/* THIRD BREAKPOINT (DESKTOP SIZE) */
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
 
 /* ------------------------------------- */
@@ -533,6 +496,13 @@ h2:after {
   font-size: 16px;
 }
 
+.arabic {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    display: none;
+    text-align: right;
+}
+
 /* ------------------------------------- */
 
 
@@ -551,7 +521,7 @@ nav {
 	background: #000;
 	font-family: tahoma;
 	position: fixed;
-  right: 0px;
+    right: 0px;
 }
 
 nav li {
@@ -569,11 +539,17 @@ ul {
 	list-style-type: none;
 }
 
-#menu {
-  padding: 1em;
+#nav-menu {
   background: #000;
+  display: block;
+}
+
+#menu {
+  padding: 2em;
+  background: #000;   /*#menu is the hamburger icon */
   display: none;
 }
+
 .hide-menu {
   display: block;
 }
@@ -605,11 +581,11 @@ ul {
 
 .hvr-icon-hang {
   left: 50px;
-	margin-top: 100px;
-	border-radius: 200px;
-	background-color: #000080;
-	color: #000;
-	padding: 5px 20px;
+  margin-top: 100px;
+  border-radius: 200px;
+  background-color: #000080;
+  color: #000;
+  padding: 5px 20px;
   margin-bottom: 7px;
 }
 
@@ -977,4 +953,4 @@ footer p {
   animation-direction: normal, alternate;
 }
 }
-/* END THIRD BREAKPOINT */
+/* END SECOND BREAKPOINT */

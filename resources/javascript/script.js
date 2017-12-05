@@ -30,3 +30,31 @@
             map: map
         });
     }
+
+//Arabic to English Buttons
+$(function() {
+    $('.btn-english').click(
+        function() {
+            $('.arabic').hide();
+            $('.english').show();
+        });
+    $('.btn-arabic').click(
+        function() {
+            $('.english').hide();
+            $('.arabic').show();
+        });
+});
+
+$(function() {
+    $("#language-toggle").click(
+        function() {
+            $(".text-on").switchClass(
+                "text-on",
+                "text-off",
+                10);
+            $(".text-off").switchClass(
+                "text-off",
+                "text-on",
+                10);
+        });
+});
