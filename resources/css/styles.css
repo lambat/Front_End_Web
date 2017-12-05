@@ -32,7 +32,7 @@ body  {
 }
 
 header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
     background-size: cover;
     height: 100vh;
@@ -161,12 +161,12 @@ ul {
   display: block;
 }
 
-.list-menu {
-	display: block;
-}
-
 .show-menu {
   display: block;
+}
+
+.list-menu {
+	display: none;
 }
 
 main {
@@ -349,7 +349,7 @@ footer p {
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
 header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
     background-size: cover;
     height: 100vh;
@@ -431,7 +431,7 @@ body  {
 }
 
 header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(images/shopview.JPG); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
     background-size: cover;
     height: 100vh;
@@ -494,13 +494,6 @@ h2:after {
 
 .intro {
   font-size: 16px;
-}
-
-.arabic {
-    font-family: 'Amiri', serif;
-    direction: rtl;
-    display: none;
-    text-align: right;
 }
 
 /* ------------------------------------- */
@@ -643,21 +636,29 @@ main {
 /* ------------------------------------- */
 
 
-.special_offer {
-    background: #e25263;
-}
-
 .pro_message {
     padding: 10px 20px;
-    top: 10px;
-    right: 80px;
+    right: 230px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 1;
     color: #fff;
     font-size: 16px;
     letter-spacing: 1px;
+    background-color: #e25263;
+    position: absolute;
+    left: 40px;
 }
+
+.pricing {
+  color: 000;
+}
+
+small {
+  font-size: 85%;
+  text-align: center;
+}
+
 
 /* ------------------------------------- */
 
