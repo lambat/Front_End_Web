@@ -32,24 +32,86 @@ body  {
 }
 
 header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
-    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
-    background-size: cover;
-    height: 100vh;
+    background-color: #555;
 	  opacity: 0.6;
+}
+
+.slideshow {
+  margin-left: 32%;
+  width: 100px;
+  height:100px;
+}
+
+.slideshow img {
+  position: relative;
+  width: 100px;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+img:nth-child(1) { animation-delay: 12s; }
+img:nth-child(2) { animation-delay: 8s; }
+img:nth-child(3) { animation-delay: 4s; }
+img:nth-child(4) { animation-delay: 0s; }
+
+//how many images we have
+$slides: 4;
+
+// how much we want each slide to show
+$time_per_slide: 4;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
+.slideshow{
+  margin:50px auto;
+  width:500px;
+  height:300px;
+  overflow:hidden;
+  position:relative;
+  margin-bottom: 90%;
+}
+.slideshow img{
+  position:absolute;
+  animation:round #{$total_animation_time}s infinite;
+  opacity:0;
+  bottom: 50px;
+}
+@keyframes round{
+  25%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+}
+
+@for $index from 1 to $slides + 1{
+  img:nth-child(#{$index}){
+    animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+  }
 }
 
 h1, h2, h3 {
     font-weight: 300;
     text-transform: uppercase;
-	text-align: center;
+	  text-align: center;
 }
 
 h1 {
     margin-top: 10px;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 250%;
+    font-size: 100%;
     word-spacing: 4px;
     letter-spacing: 1px;
 	  background-color: #ccc;
@@ -57,7 +119,7 @@ h1 {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 50%;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
@@ -117,13 +179,13 @@ main {
 
 nav {
 	text-align: center;
-	position: fixed;
 	top: 20em;
 	width: 10%;
 	background-color: #000;
 	opacity: 0.6;
 	color: #ddd;
   right: 0px;
+  position: relative;
 }
 
 nav ul {
@@ -191,28 +253,24 @@ main {
 footer{
     background-color: #333;
     padding: 40px;
-    font-size: 80%;
+    font-size: 50%;
 }
 
 .footer-nav{
     list-style: none;
     float: left;
+    text-align: center;
 }
 
 .social-links{
     list-style: none;
-    float: right;
+    text-align: center;
 }
 
 .footer-nav li,
 .social-links li{
   display: inline-block;
   margin-right: 20px;
-}
-
-.footer-nav li:last-child,
-.social-links li:last-child {
-  margin-right: 0;
 }
 
 .footer-nav li a:link,
@@ -230,9 +288,11 @@ footer{
     color: #ddd;
 }
 
-.social-links li a:link,
-.social-links li a:visited{
-      font-size: 140%;
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram {
+
+  padding-top: 7px;
 }
 
 .fa-facebook-square,
@@ -405,6 +465,23 @@ h2:after {
 
 }
 
+.img {
+  width:200px;
+  height: auto;
+}
+
+.img1 {
+  width: 200px;
+  height: auto;
+}
+
+.img2 {
+  width: 50px;
+  height: auto;
+}
+
+
+
 /* END FIRST BREAKPOINT */
 
 
@@ -432,10 +509,75 @@ body  {
 
 header {
     background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
-    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+    background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
     background-size: cover;
     height: 100vh;
 	  opacity: 0.6;
+}
+
+.slideshow {
+  margin-left: 32%;
+  width: 700px;
+  height: 200px;
+}
+
+.slideshow img {
+  position: absolute;
+  width: 500px;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+img:nth-child(1) { animation-delay: 12s; }
+img:nth-child(2) { animation-delay: 8s; }
+img:nth-child(3) { animation-delay: 4s; }
+img:nth-child(4) { animation-delay: 0s; }
+
+//how many images we have
+$slides: 4;
+
+// how much we want each slide to show
+$time_per_slide: 4;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
+.slideshow{
+  margin:50px auto;
+  width:500px;
+  height:300px;
+  overflow:hidden;
+  position:relative;
+  margin-bottom: 90%;
+}
+.slideshow img{
+  position:absolute;
+  animation:round #{$total_animation_time}s infinite;
+  opacity:0;
+  bottom: 50px;
+}
+@keyframes round{
+  25%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+}
+
+@for $index from 1 to $slides + 1{
+  img:nth-child(#{$index}){
+    animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+  }
 }
 
 h1, h2, h3 {
@@ -495,6 +637,26 @@ h2:after {
 .intro {
   font-size: 16px;
 }
+
+/* css for search bar  */
+
+
+  input[type=text] {
+      width: 50px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
+      margin-top: 10px;
+  }
+
+  input[type=text]:focus {
+      width: 50%;
+  }
 
 /* ------------------------------------- */
 
@@ -560,7 +722,6 @@ ul {
 /* ------------------------------------- */
 .box {
   width: 20%;
-  margin-bottom: 20px;
   float: left;
   display: block;
   margin: 2% 0 2% 1.6%;
@@ -579,7 +740,7 @@ ul {
   background-color: #000080;
   color: #000;
   padding: 5px 20px;
-  margin-bottom: 7px;
+  margin-bottom: 1px;
 }
 
 /* ------------------------------------- */
