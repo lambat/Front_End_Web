@@ -681,8 +681,13 @@ small {
   text-align: center;
 }
 
+.img1 {
+  width: 300px;
+  height: auto;
+}
+
 .quantity {
-    width: 10%;
+    width: 1%;
     display: inline;
     padding: 6px 10px 7px;
     margin-right: 10px;
