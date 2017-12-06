@@ -463,7 +463,7 @@ h2 {
     letter-spacing: 1px;
 	  margin-top: 10px;
     margin-bottom: 20px;
-    color: #555;
+    color: #000080;
 }
 
 h3 {
@@ -626,6 +626,25 @@ main {
 	margin-bottom: 20px;
 }
 
+.img {
+  width: 300px;
+  height: auto;
+}
+
+#construction {
+  padding: 10px 20px;
+  right: 230px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: #e25263;
+  left: 100px;
+  text-align: center;
+}
+
 
 /* ------------------------------------- */
 
@@ -652,6 +671,9 @@ main {
 
 .pricing {
   color: 000;
+  text-align: center;
+  line-height: 29px;
+  font-size: 15px;
 }
 
 small {
@@ -659,6 +681,19 @@ small {
   text-align: center;
 }
 
+.quantity {
+    width: 10%;
+    display: inline;
+    padding: 6px 10px 7px;
+    margin-right: 10px;
+}
+
+.currentlytrending_box {
+	position: relative;
+	width: 50%;
+	min-height: 1px;
+  margin-left: 3%;
+}
 
 /* ------------------------------------- */
 
@@ -676,6 +711,7 @@ blockquote {
     position: relative;
     margin-top: 40px;
     background-color: #F0F0F0;
+    font-size: 17px;
 }
 
 blockquote::before {
@@ -707,12 +743,17 @@ cite img {
 
 section {
   line-height: 30px;
-  /*background-color: #F0F0F0;*/
 }
 
 .center {
   text-align: center;
   line-height: 40px;
+  font-size: 16px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 /* ------------------------------------- */

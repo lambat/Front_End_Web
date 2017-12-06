@@ -1,7 +1,7 @@
 (function(){
 
   let menuButton = document.getElementById("menu");
-  let navMenu = document.getElementById("navMenu");
+  let navMenu = document.getElementById("nav-menu");
 
   menuButton.addEventListener("click", toggleMenu);
 
@@ -19,14 +19,16 @@
 
 })();
 
-       function initMap() {
-        let location = {lat: 52.636576, lng: -1.113813};
-        let map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 16,
-            center: location
-        });
-        let marker = new google.maps.Marker({
-            position: location,
-            map: map
-        });
-    }
+function initMap() {
+  let location = {lat: 52.636576, lng: -1.113813};
+
+  //This sets the default location for when the map is first loaded on the website.
+  let map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 16,
+      center: location
+  });
+  let marker = new google.maps.Marker({
+      position: location,
+      map: map
+  });
+}
