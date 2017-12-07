@@ -782,18 +782,6 @@ main {
 	font-family: tahoma;
 }
 
-.overlay2 {
-  position: absolute;
-  left: 10px;
-  bottom: 10%;
-	background-color: #000080;
-	padding: 5px 10px;
-	font-size: 14px;
-	color: #fff;
-	opacity: 0.8;
-	font-family: tahoma;
-}
-
 .overlay:hover {
 	background-color: #000;
 	color: #fff;
@@ -841,9 +829,6 @@ main {
     position: absolute;
     left: 40px;
     color: 000;
-    text-align: center;
-    line-height: 29px;
-    font-size: 15px;
 }
 
 .pricing {
@@ -875,6 +860,7 @@ small {
 	width: 50%;
 	min-height: 1px;
   margin-left: 3%;
+  text-align: center;
 }
 
 /* ------------------------------------- */
