@@ -636,27 +636,10 @@ h2:after {
 
 .intro {
   font-size: 16px;
+  line-height: 19px;
 }
 
-/* css for search bar  */
 
-
-  input[type=text] {
-      width: 50px;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      background-position: 10px 10px;
-      background-repeat: no-repeat;
-      padding: 12px 20px 12px 40px;
-      transition: width 0.5s ease-in-out;
-      transition: width 0.5s ease-in-out;
-      margin-top: 10px;
-  }
-
-  input[type=text]:focus {
-      width: 50%;
-  }
 
 /* ------------------------------------- */
 
@@ -713,6 +696,31 @@ ul {
   color: #000080;
 }
 
+#get-name {
+background: white;
+  padding: 0.5em;
+}
+
+/* css for search bar  */
+
+
+  input[type=text] {
+      width: 50px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
+      margin-top: 10px;
+  }
+
+  input[type=text]:focus {
+      width: 50%;
+  }
+
 /* ------------------------------------- */
 
 
@@ -764,9 +772,20 @@ main {
 }
 
 .overlay {
-	position: absolute;
-	left: 41px;
-	bottom: 10px;
+  position: absolute;
+  left: 620px;
+	background-color: #000080;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.8;
+	font-family: tahoma;
+}
+
+.overlay2 {
+  position: absolute;
+  left: 10px;
+  bottom: 10%;
 	background-color: #000080;
 	padding: 5px 10px;
 	font-size: 14px;
@@ -778,13 +797,6 @@ main {
 .overlay:hover {
 	background-color: #000;
 	color: #fff;
-}
-
-.category_box {
-	position: relative;
-	width: 50%;
-	min-height: 1px;
-	margin-bottom: 20px;
 }
 
 .img {
@@ -828,6 +840,10 @@ main {
     background-color: #e25263;
     position: absolute;
     left: 40px;
+    color: 000;
+    text-align: center;
+    line-height: 29px;
+    font-size: 15px;
 }
 
 .pricing {
@@ -954,6 +970,33 @@ section {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
+    background-color: #000;
+}
+
+.btn-full:link, .btn-full:visited, input[type=clearstorage] {
+    background-color: #000080;
+    border: 1px solid #000080;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:link, .btn:visited, input[type=clearStorage] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-bottom: 10px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=clearStorage]:hover,
+input[type=clearStorage]:active {
     background-color: #000;
 }
 
