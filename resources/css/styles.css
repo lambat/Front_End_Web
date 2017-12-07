@@ -859,8 +859,8 @@ small {
 	position: relative;
 	width: 50%;
 	min-height: 1px;
-  margin-left: 3%;
   text-align: center;
+  display: block;
 }
 
 /* ------------------------------------- */

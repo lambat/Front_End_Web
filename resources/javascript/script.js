@@ -35,6 +35,8 @@ function initMap() {
   });
 }
 
+
+
 (function(){
 
   let myName = document.getElementById("my-name");
