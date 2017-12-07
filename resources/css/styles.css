@@ -640,7 +640,6 @@ h2:after {
 }
 
 
-
 /* ------------------------------------- */
 
 
@@ -773,13 +772,14 @@ main {
 
 .overlay {
   position: absolute;
-  left: 620px;
-	background-color: #000080;
-	padding: 5px 10px;
-	font-size: 14px;
-	color: #fff;
-	opacity: 0.8;
-	font-family: tahoma;
+  left: 41px;
+  bottom: 10px;
+  background-color: #000080;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+  font-family: tahoma;
 }
 
 .overlay:hover {
@@ -790,6 +790,13 @@ main {
 .img {
   width: 300px;
   height: auto;
+}
+
+.category_box {
+  position: relative;
+  width: 50%;
+  min-height: 1px;
+  margin-bottom: 20px;
 }
 
 #construction {

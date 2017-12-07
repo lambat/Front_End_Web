@@ -30,7 +30,7 @@ The following link is for the initial design:
 - **Responsive Layout** - This website follows a responsive layout as explained from the Mobile First Approach. This is best represented by the title which reduces in size and readjusts, as well as the nav bar which collapses and hides the menu buttons creating a nice hamburger effect.
 
 # Obstacles
-- The biggest obstacle was getting the Google map API to load correctly on my Github page. After two days of trying every possible thing I could to fix it, I decided to validate my website and it picked the error out which was a simple and easy error to make. <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ_hdBAn1wZ4JmPjO94uE20Aq-5PN50-M&callback=initMap"></script> The // was missing from the url which was causing the Google Maps API to not load correctly.
+- The biggest obstacle was getting the Google map API to load correctly on my Github page. After two days of trying every possible thing I could to fix it, I decided to validate my website and it picked the error out which was a simple and easy error to make. The // was missing from the url which was causing the Google Maps API to not load correctly.
 
 # Testing
 The following link is for the evidence of testing:
