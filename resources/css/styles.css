@@ -25,7 +25,6 @@ body  {
     background-color: #fff;
     font-family: 'Lato', 'Arial';
     font-weight: 300;
-    text-rendering: optimizeLegibility; /*render fonts in a more perfect manner*/
     font-size: 20px;
     overflow-x: hidden;
 	  scroll-behavior: smooth;
@@ -134,15 +133,10 @@ h3 {
     color: 000080;
 }
 
-.heading {
-    color: 000;
-	  background-color: 000;
-}
-
 h2:after {
     display: block;
     height: 2px;
-    background-color: ##000080;
+    background-color: #000080;
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
@@ -407,7 +401,7 @@ footer p {
 /* END FIRST BREAKPOINT */
 
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 250px) {
 header {
     background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
@@ -501,7 +495,6 @@ body  {
     background-color: #fff;
     font-family: 'Lato', 'Arial';
     font-weight: 300;
-    text-rendering: optimizeLegibility; /*render fonts in a more perfect manner*/
     font-size: 20px;
     overflow-x: hidden;
 	  scroll-behavior: smooth;
@@ -758,16 +751,12 @@ background: white;
 
 /* ------------------------------------- */
 
-main {
-	margin-left: 25%;
-}
-
 .photo {
 	width: 10px;
 	margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .overlay {
@@ -850,11 +839,6 @@ small {
   text-align: center;
 }
 
-.img1 {
-  width: 300px;
-  height: auto;
-}
-
 .quantity {
     width: 1%;
     display: inline;
@@ -868,6 +852,7 @@ small {
 	min-height: 1px;
   text-align: center;
   display: block;
+  margin-bottom: 20px;
 }
 
 /* ------------------------------------- */
@@ -994,7 +979,7 @@ input[type=clearStorage]:active {
 }
 
 .btn-full:hover,
-.btn-full:active,
+.btn-full:active
 {
     border: 1px solid #fff;
 }
@@ -1196,5 +1181,5 @@ footer p {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-}
+
 /* END SECOND BREAKPOINT */
