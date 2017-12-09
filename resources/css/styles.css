@@ -401,7 +401,7 @@ footer p {
 /* END FIRST BREAKPOINT */
 
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 768px) {
 header {
     background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
     background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
@@ -825,6 +825,21 @@ background: white;
     position: absolute;
     left: 40px;
     color: 000;
+    top: 20px;
+}
+
+.currentlytrending_box {
+	position: relative;
+	width: 50%;
+	min-height: 1px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+aside {
+  float: left;
+  margin-bottom: 50px;
 }
 
 .pricing {
@@ -844,15 +859,6 @@ small {
     display: inline;
     padding: 6px 10px 7px;
     margin-right: 10px;
-}
-
-.currentlytrending_box {
-	position: relative;
-	width: 50%;
-	min-height: 1px;
-  text-align: center;
-  display: block;
-  margin-bottom: 20px;
 }
 
 /* ------------------------------------- */
@@ -899,10 +905,6 @@ cite img {
 
 .quote {
   width: 10px;
-}
-
-section {
-  line-height: 30px;
 }
 
 .center {

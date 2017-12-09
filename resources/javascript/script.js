@@ -21,6 +21,8 @@
 
 })();
 
+let marker;
+
 function initMap() {
   let location = {lat: 52.636576, lng: -1.113813};
 
@@ -31,11 +33,20 @@ function initMap() {
   });
   let marker = new google.maps.Marker({
       position: location,
-      map: map
+      map: map,
+      draggable: true,
+      animation: google.maps.Animation.DROP,
   });
+  marker.addListener('click', toggleBounce);
 }
 
-
+      function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
 
 (function(){
 
