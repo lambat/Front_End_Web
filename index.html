@@ -15,12 +15,22 @@
 <body>
 
 <header>
-	<div class="slideshow">
-	    <img src="resources/images/slideshow1.jpg" alt="" />
-	    <img src="resources/images/slideshow2.jpg" alt="" />
-	    <img src="resources/images/slideshow3.jpg" alt="" />
-	    <img src="resources/images/slideshow4.jpg" alt="" />
-	  </div>
+
+		<div class="slider-holder">
+		        <span id="slider-image-1"></span>
+		        <span id="slider-image-2"></span>
+		        <span id="slider-image-3"></span>
+		        <div class="image-holder">
+		            <img src="resources/images/slideshow1.jpg" class="slider-image" alt="Sliding Image 1" />
+		            <img src="resources/images/slideshow3.jpg" class="slider-image" alt="Sliding Image 2" />
+		            <img src="resources/images/slideshow4.jpg" class="slider-image" alt="Sliding Image 3" />
+		        </div>
+		        <div class="button-holder">
+		            <a href="#slider-image-1" class="slider-change"></a>
+		            <a href="#slider-image-2" class="slider-change"></a>
+		            <a href="#slider-image-3" class="slider-change"></a>
+		        </div>
+		    </div>
 </header>
 
 	<nav id="nav-menu" class="show-menu">
@@ -34,8 +44,6 @@
       <li class="list-menu"><a href="#contactus">Contact Us</a></li>
      </ul>
 </nav>
-
-
 
 <main>
 	<input type="text" name="search" placeholder="Search..">
@@ -152,27 +160,11 @@
 <aside class="currentlytrending_box">
 	<span class="pro_message">Popular</span>
 <div class="photo">
-	<img src="resources/images/item2.jpg" alt="Anti-Freezer" class="img"/>
-</div>
-<div class="pricing">
-<small>MD0002</small>
-<p><strong>De-Icer</strong></p>
-<p>RRP: &pound;3.00</p>
-	 <form action="#" method="post">
-		 <input type="text" name="txtQuantity" value="1" class="quantity" />
-		 <input type="submit" value="Buy" class="btn" />
-	 </form>
-</div>
-</aside>
-
-<aside class="currentlytrending_box">
-	<span class="pro_message">Popular</span>
-<div class="photo">
 	<img src="resources/images/item3.jpg" alt="WD-40" class="img"/>
 </div>
 
 <div class="pricing">
-<small>MD0003</small>
+<small>MD0002</small>
 <p><strong>WD-40</strong></p>
 <p>RRP: &pound;2.00</p>
 	 <form action="#" method="post">
@@ -183,14 +175,31 @@
 </aside>
 
 <aside class="currentlytrending_box">
+	<span class="pro_message">Popular</span>
 <div class="photo">
-	<img src="resources/images/item4.jpg" alt="Air-Vent" class="img"/>
+	<img src="resources/images/item2.jpg" alt="Anti-Freezer" class="img"/>
+</div>
+
+<div class="pricing">
+<small>MD0003</small>
+<p><strong>De-Icer</strong></p>
+<p>RRP: &pound;3.00</p>
+	 <form action="#" method="post">
+		 <input type="text" name="txtQuantity" value="1" class="quantity" />
+		 <input type="submit" value="Buy" class="btn" />
+	 </form>
+</div>
+</aside>
+
+<aside class="currentlytrending_box">
+<div class="photo">
+	<img src="resources/images/item6.jpg" alt="Tap" class="img"/>
 </div>
 
 <div class="pricing">
 <small>MD0004</small>
-<p><strong>Air-Vent</strong></p>
-<p>RRP: &pound;4.00</p>
+<p><strong>Tap</strong></p>
+<p>RRP: &pound;80.00</p>
 	 <form action="#" method="post">
 		 <input type="text" name="txtQuantity" value="1" class="quantity" />
 		 <input type="submit" value="Buy" class="btn" />
@@ -199,15 +208,14 @@
 </aside>
 
 <div class="currentlytrending_box">
-<span class="pro_message">Popular</span>
 <div class="photo">
-	<img src="resources/images/item6.jpg" alt="Tap" class="img"/>
+	<img src="resources/images/item5.jpg" alt="Tap" class="img"/>
 </div>
 
 <div class="pricing">
-<small>MD0006</small>
-<p><strong>Tap</strong></p>
-<p>RRP: &pound;80.00</p>
+<small>MD0005</small>
+<p><strong>Portable Heater</strong></p>
+<p>RRP: &pound;9.99</p>
 	 <form action="#" method="post">
 		 <input type="text" name="txtQuantity" value="1" class="quantity" />
 		 <input type="submit" value="Buy" class="btn" />
@@ -283,10 +291,8 @@
 
 	<ul class="footer-nav">
 		<li><a href="index.html#aboutus">About Us</a></li>
-		<li><a href="#">Blog</a></li>
+		<li><a href="index.html#contactus">Contact Us</a></li>
 		<li><a href="sitemap.html">SiteMap</a></li>
-		<li><a href="#">IOS App</a></li>
-		<li><a href="#">Android App</a></li>
 	</ul>
 
 	<ul class="social-links">
