@@ -109,7 +109,7 @@ main {
 nav {
 	text-align: center;
 	top: 20em;
-	width: 10%;
+	width: 30%;
 	background-color: #000;
 	opacity: 0.6;
 	color: #ddd;
@@ -277,13 +277,6 @@ footer{
 .fa-facebook-square,
 .fa-twitter-square,
 .fa-instagram {
-
-  padding-top: 7px;
-}
-
-.fa-facebook-square,
-.fa-twitter-square,
-.fa-instagram {
       transition: color 1s;
 }
 
@@ -435,6 +428,10 @@ h2:after {
    content: " ";
 }
 
+#welcome {
+  background-color: #000080;
+}
+
 #menu {
   padding: 2em;
   background: #000;   /*#menu is the hamburger icon */
@@ -547,6 +544,10 @@ h2:after {
     content: " ";
 }
 
+#welcome {
+  background-color: #000080;
+}
+
 .logo {
     width: 100px;
 	  text-align: center;
@@ -627,7 +628,7 @@ h2:after {
 
 nav {
 	text-align: center;
-	top: 9em;
+	top: 7em;
 	width: 10%;
 	background-color: #000;
 	opacity: 0.6;
@@ -635,7 +636,7 @@ nav {
 	background: #000;
 	font-family: tahoma;
 	position: fixed;
-    right: 0px;
+  right: 0px;
 }
 
 nav li {
@@ -901,6 +902,22 @@ cite img {
   height: 400px;
   width: 100%;
 }
+
+/* ------------------------------------- */
+
+
+/* 		   MISCELLANEOUS   	        	  	 */
+
+
+/* ------------------------------------- */
+
+
+li .txt {
+  width: 60%;
+  font-size: 16px;
+  text-align: center;
+}
+
 
 /* ------------------------------------- */
 

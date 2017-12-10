@@ -46,3 +46,6 @@ The following link is for the evidence of testing:
 
 
 - [Testing Sheets](documents/testing.md)
+
+# References
+- I have used the lab code provided by Dave & Fania to create a responsive menu, local storage of name and Wikipedia API using JavaScript.
