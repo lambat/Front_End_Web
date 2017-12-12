@@ -13,14 +13,17 @@ I decided to create a website based on DIY as this shop is actually ran by my fa
 # Design Documentation
 The following link is for the initial design:
 
+- https://zubairlambat.wixsite.com/millenniumdiy
 
-- [Initial Sketches](documents/initial.md)
+The following link is for the Final design:
+
+- [Final Design](documents/finaldesign.md)
 
 # Design Principles (PARC)
 1. **P** - Proximity - This has been achieved by using an even amount of images when grouped together. This can be best seen on the about us section where all 4 columns are aligned together and the products section where all 6 images are equally grouped together.
 2. **A** - Alignment - In the case of this website, the entire or majority of the website is inside a <main> tag and this made it easier to align all the items in a correct manner.
 3. **R** - Repetition - Each section contains the same h1 tag and can be clearly seen where each section begins/ends. There is also a navigation bar which follows the user as they scroll along the page and this brings confidence to the user to ensure they know where everything is located on the website.
-4. **C** - Contrast - Only three colour's are used throughout the website to give a consistency which are: Navy blue, grey and black.. This is manipulated well throughout the website and this is to match the logo colour's which contrasts well and is easily readable for any user.
+4. **C** - Contrast - Only three colour's are used throughout the website to give a consistency which are: Navy blue, grey and black. This is manipulated well throughout the website and this is to match the logo colour's which contrasts well and is easily readable for any user.
 
 # Design Features
 - **User's can enter their name** - This design was created to welcome users to the website and make them feel at home and stores their name unless they press the clear storage button and refresh the page which will default back to the  original setting.
@@ -32,7 +35,7 @@ The following link is for the initial design:
 # Obstacles
 - The biggest obstacle was getting the Google map API to load correctly on my Github page. After two days of trying every possible thing I could to fix it, I decided to validate my website and it picked the error out which was a simple and easy error to make. The // was missing from the URL which was causing the Google Maps API to not load correctly.
 - I also found using another branch to be quite difficult as when I did use it, it somehow deleted my CSS file so I had to revert back to my old commit to retrieve my CSS file. I did manage to test a few things using the branch but I am not so confident with using it to test and merge regularly.
-- Because we were limited to not using any frameworks, I feel that I could not produce a much a better website than I possibly could have. This restricted the endless possibilities that I could have used to make my website look a lot more appealing.
+- Because we were limited to not using any frameworks, I feel that I could not produce a much a better website than I possibly could have. This restricted the endless possibilities that I could have used to make my website look a lot more appealing. As shown in my user testing, a lot of the reviews were that the website was not aesthetically appealing. By using frameworks, I could have made the website look a lot more appealing. I could have created a slider which slides through the images after a few seconds. Also for the products in the currently trending section, I could have created a slider to make it look a lot better.
 
 # Google Maps API key
 - Please generate your own Google API key from the following link: https://developers.google.com/maps/documentation/javascript/get-api-key
@@ -44,8 +47,10 @@ The following link is for the initial design:
 # Testing
 The following link is for the evidence of testing:
 
-
 - [Testing Sheets](documents/testing.md)
 
 # References
-- I have used the lab code provided by Dave & Fania to create a responsive menu, local storage of name and Wikipedia API using JavaScript.
+- Responsive Menu - https://github.com/CTEC3905/04-lab/tree/nav
+- Local storage of name - https://github.com/CTEC3905/03-lab-javascript-2/tree/clearStorage
+- Wikipedia API - https://github.com/CTEC3905/08-lab-json-ajax
+- CSS Slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/ Adapted the code to suit how I wanted the slider to look.
