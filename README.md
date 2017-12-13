@@ -49,6 +49,13 @@ The following link is for the evidence of testing:
 
 - [Testing Sheets](documents/testing.md)
 
+From the feedback, there were three main issues which were highlighted. These were:
+- Adding a 'No' option for the newsletter in the form.
+- Grammatical and spelling errors.
+- Website is not responsive on all three devices (Desktop, Tablet and Mobile)
+
+These issues have now been addressed with all three working correctly.
+
 # References
 - Responsive Menu - https://github.com/CTEC3905/04-lab/tree/nav
 - Local storage of name - https://github.com/CTEC3905/03-lab-javascript-2/tree/clearStorage

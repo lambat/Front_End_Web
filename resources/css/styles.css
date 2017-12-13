@@ -31,7 +31,10 @@ body  {
 }
 
 header {
-    background-color: #555;
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+    background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
+    background-size: cover;
+    height: 50vh;
 	  opacity: 0.6;
 }
 
@@ -198,7 +201,6 @@ main {
   position: relative;
   width: 800px;
   height: 400px;
-  opacity: 0.9;
 }
 
 .button-holder {
@@ -492,13 +494,13 @@ footer p {
 
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 768px) {
-header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the text */
-    background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
-    background-size: cover;
-    height: 100vh;
-	opacity: 0.6;
-}
+  header {
+      background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+      background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
+      background-size: cover;
+      height: 60vh;
+  	  opacity: 0.6;
+  }
 
 nav {
 	text-align: center;
@@ -557,7 +559,7 @@ h2:after {
 }
 
 .img1 {
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
@@ -665,13 +667,10 @@ h2:after {
 
 .slider-holder {
   width: 800px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  bottom: 50px;
+  height: 800px;
   text-align: center;
   overflow: hidden;
+  padding-top: 280px;
 }
 
 .image-holder {
@@ -692,7 +691,6 @@ h2:after {
   position: relative;
   width: 800px;
   height: 400px;
-  opacity: 0.9;
 }
 
 .button-holder {
@@ -842,7 +840,6 @@ background: white;
 /* ------------------------------------- */
 
 .photo {
-	width: 10px;
 	margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
@@ -867,6 +864,11 @@ background: white;
 }
 
 .img {
+  width: 300px;
+  height: 300px;
+}
+
+.img1 {
   width: 300px;
   height: auto;
 }
