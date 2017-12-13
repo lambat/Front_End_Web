@@ -68,7 +68,7 @@ h2 {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
-    color: 000080;
+    color: #000080;
 }
 
 h2:after {
@@ -188,9 +188,6 @@ main {
   height: 400px;
   clear: both;
   position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
   transition: left 2s;
 }
 
@@ -230,9 +227,9 @@ main {
 
 .btn-full:link, .btn-full:visited, input[type=submit] {
     background-color: #000080;
-    border: 1px solid #000080;
     color: #fff;
     margin-right: 15px;
+    margin-top: 10px;
 }
 
 .btn:link, .btn:visited, input[type=submit] {
@@ -361,7 +358,7 @@ footer {
 .footer-nav li,
 .social-links li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 
 }
 
@@ -409,49 +406,27 @@ footer {
 footer p {
     color: #ddd;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Awesome Font Button Animation */
 
 /* Icon Hang */
-@-webkit-keyframes hvr-icon-hang {
-  0% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-  50% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  100% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
+
 @keyframes hvr-icon-hang {
   0% {
-    -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
   50% {
-    -webkit-transform: translateY(2px);
     transform: translateY(2px);
   }
   100% {
-    -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
 }
-@-webkit-keyframes hvr-icon-hang-sink {
-  100% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
+
 @keyframes hvr-icon-hang-sink {
   100% {
-    -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
 }
@@ -470,23 +445,15 @@ footer p {
   right: 1em;
   padding: 0 1px;
   font-family: FontAwesome;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 .hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
-  -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   animation-name: hvr-icon-hang-sink, hvr-icon-hang;
-  -webkit-animation-duration: .3s, 1.5s;
   animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
   animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
 
@@ -636,11 +603,6 @@ h3 {
     color: #000080;
 }
 
-.heading {
-    color: 000;
-	  background-color: 000;
-}
-
 h2:after {
     display: block;
     height: 2px;
@@ -678,9 +640,6 @@ h2:after {
   height: 400px;
   clear: both;
   position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
   transition: left 2s;
 }
 
@@ -825,7 +784,7 @@ background: white;
   left: 50px;
   margin-top: 100px;
   border-radius: 200px;
-  background-color: #000080;
+  background-color: #008;
   color: #000;
   padding: 5px 20px;
   margin-bottom: 1px;
@@ -916,7 +875,7 @@ background: white;
     background-color: #e25263;
     position: absolute;
     left: 40px;
-    color: 000;
+    color: #fff;
     top: 20px;
 }
 
@@ -935,7 +894,7 @@ aside {
 }
 
 .pricing {
-  color: 000;
+  color: #000;
   text-align: center;
   line-height: 29px;
   font-size: 15px;
@@ -1034,13 +993,6 @@ li .txt {
 
 /* ------------------------------------- */
 
-.btn-full:link, .btn-full:visited, input[type=submit] {
-    background-color: #000080;
-    border: 1px solid #000080;
-    color: #fff;
-    margin-right: 15px;
-}
-
 .btn:link, .btn:visited, input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
@@ -1059,21 +1011,6 @@ li .txt {
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #000;
-}
-
-.btn-full:link, .btn-full:visited, input[type=clearstorage] {
-    background-color: #000080;
-    border: 1px solid #000080;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn:link, .btn:visited, input[type=clearStorage] {
-    display: inline-block;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 200px;
-    margin-bottom: 10px;
 }
 
 .btn-ghost:link, .btn-ghost:visited {
@@ -1217,43 +1154,19 @@ footer p {
 /* Awesome Font Button Animation */
 
 /* Icon Hang */
-@-webkit-keyframes hvr-icon-hang {
-  0% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-  50% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  100% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
 @keyframes hvr-icon-hang {
   0% {
-    -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
   50% {
-    -webkit-transform: translateY(2px);
     transform: translateY(2px);
   }
   100% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
-@-webkit-keyframes hvr-icon-hang-sink {
-  100% {
-    -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
 }
 @keyframes hvr-icon-hang-sink {
   100% {
-    -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
 }
@@ -1272,23 +1185,15 @@ footer p {
   right: 1em;
   padding: 0 1px;
   font-family: FontAwesome;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 .hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
-  -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   animation-name: hvr-icon-hang-sink, hvr-icon-hang;
-  -webkit-animation-duration: .3s, 1.5s;
   animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
   animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
 
