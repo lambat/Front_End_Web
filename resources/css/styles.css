@@ -87,7 +87,7 @@ h2:after {
 }
 
 a:link {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -158,12 +158,10 @@ ul {
 }
 
 .list-menu {
-	display: none;
+	display: block;
 }
 
 main {
-	max-width: 800px;
-	margin-left: 25%;
 	max-width: 800px;
 }
 
@@ -274,17 +272,19 @@ main {
   margin-bottom: 1px;
 }
 
+/* ------------------------------------- */
+
+
 /* 		      Products Section 		  			 */
 
 
 /* ------------------------------------- */
 
 .photo {
-	width: 1px;
 	margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 40px;
-  margin-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overlay {
@@ -305,8 +305,13 @@ main {
 }
 
 .img {
-  width: 300px;
-  height: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.img1 {
+  width: 50px;
+  height: 50px;
 }
 
 .category_box {
@@ -327,6 +332,137 @@ main {
   letter-spacing: 1px;
   background-color: #e25263;
   left: 100px;
+  text-align: center;
+}
+
+
+/* ------------------------------------- */
+
+
+/* 		      Currently Trending		  		 */
+
+
+/* ------------------------------------- */
+
+
+.pro_message {
+    padding: 10px 20px;
+    right: 230px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #e25263;
+    position: absolute;
+    left: 40px;
+    color: #fff;
+    top: 20px;
+}
+
+.currentlytrending_box {
+	position: relative;
+	width: 50%;
+	min-height: 1px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+aside {
+  margin-bottom: 50px;
+  float: right;
+}
+
+.pricing {
+  color: #000;
+  text-align: center;
+  line-height: 29px;
+  font-size: 15px;
+  bottom: 10px;
+}
+
+small {
+  font-size: 85%;
+  text-align: center;
+}
+
+.quantity {
+    display: inline;
+    padding: 6px 10px 7px;
+    margin-right: 10px;
+}
+
+/* ------------------------------------- */
+
+
+/* 		  Feedback Section 		  			 */
+
+
+/* ------------------------------------- */
+
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    background-color: #F0F0F0;
+    font-size: 5px;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 100%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: #000080;
+}
+
+cite {
+    font-size: 10px;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.quote {
+  width: 10px;
+}
+
+.center {
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+#map {
+  height: 100px;
+  width: 100%;
+}
+
+/* ------------------------------------- */
+
+
+/* 		   MISCELLANEOUS   	        	  	 */
+
+
+/* ------------------------------------- */
+
+
+li .txt {
+  width: 60%;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -520,6 +656,11 @@ h2:after {
   display: block;
 }
 
+.twitter-timeline {
+  float: right;
+  position: fixed;
+}
+
 .img {
   width:200px;
   height: auto;
@@ -615,6 +756,11 @@ h2:after {
 
 #welcome {
   background-color: #000080;
+}
+
+.twitter-timeline {
+  float: right;
+  position: static;
 }
 
 .logo {
