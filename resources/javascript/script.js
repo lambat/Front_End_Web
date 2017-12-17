@@ -2,8 +2,8 @@
 
 (function(){
 
-  let menuButton = document.getElementById("menu");
-  let navMenu = document.getElementById("nav-menu");
+  let menuButton = document.getElementById("navnav");
+  let navMenu = document.getElementById("test1");
 
   menuButton.addEventListener("click", toggleMenu);
 

@@ -20,6 +20,16 @@
     box-sizing: border-box;
 }
 
+ #nav-menu {
+  background: #000;
+  min-width:110px;
+}
+
+#navnav{
+	display:block;
+}
+
+
 html,
 body  {
     background-color: #fff;
@@ -115,14 +125,15 @@ nav {
   display: none;
 }
 
+
 nav ul {
 	font-family: tahoma;
 	text-align: center;
 	list-style-type: none;
+	display: none;
 }
 
 nav li {
-	display: block;
 	padding: 10px;
 }
 
@@ -145,21 +156,18 @@ ul {
 }
 
 #menu {
-  padding: 2em;
+  padding: 1em;
   background: #fff;   /*#menu is the hamburger icon */
-  display: none;
+  display: block;
 }
 
 .show-menu {
   display: block;
 }
 
-.list-menu {
-	display: block;
-}
-
 main {
 	max-width: 800px;
+  margin-left: 30%;
 }
 
 .photo {
@@ -635,12 +643,20 @@ footer p {
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 768px) {
   header {
-      background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+      background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
       background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
       background-size: cover;
       height: 60vh;
-  	  opacity: 0.6;
+
   }
+
+  #navnav{
+	display:none;
+}
+
+nav ul{
+	display:block;
+}
 
 nav {
 	text-align: center;
@@ -740,11 +756,14 @@ body  {
 }
 
 header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
     background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
     background-size: cover;
     height: 90vh;
-	  opacity: 0.6;
+}
+
+#nav-menu {
+  min-width:135px;
 }
 
 h1, h2, h3 {
@@ -815,7 +834,7 @@ h2:after {
   height: 800px;
   text-align: center;
   overflow: hidden;
-  padding-top: 280px;
+  padding-top: 150px;
 }
 
 .image-holder {
@@ -882,6 +901,7 @@ nav {
 	font-family: tahoma;
 	position: fixed;
   right: 0px;
+  display:block;
 }
 
 nav li {
@@ -899,10 +919,69 @@ ul {
 	list-style-type: none;
 }
 
-#nav-menu {
-  background: #000;
-  display: block;
+.glowing {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  list-style: none;
+  font-family: arial;
+  font-size: 5em;
+  letter-spacing: 15px;
+  color: #484848;
+  text-shadow: none;
+  animation: animate 1s infinite linear
 }
+
+@keyframes animate {
+  0% { color: #484848; text-shadow: none;}
+  18% { color: #484848; text-shadow: none;}
+  20% { color: #fff900; text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;}
+  30% { color: #484848; text-shadow: none;}
+  35% { color: #fff900; text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;}
+  70% { color: #484848; text-shadow: none;}
+  85% { color: #fff900; text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;}
+  90% { color: #484848; text-shadow: none;}
+  100% { color: #484848; text-shadow: none;}
+}
+
+.glowing:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.glowing:nth-child(2) {
+  animation-delay: .4s;
+}
+
+.glowing:nth-child(3) {
+  animation-delay: .6s;
+}
+
+.glowing:nth-child(4) {
+  animation-delay: .8s;
+}
+
+.glowing:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.glowing:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.glowing:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.glowing:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+.glowing:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
 
 #menu {
   padding: 2em;
@@ -962,6 +1041,7 @@ background: white;
     border-radius: 50%;
     margin-left: 38%;
     margin-top: 60px;
+    padding-top: 20px;
   }
 
   #svg {
@@ -1133,13 +1213,29 @@ small {
     width: 100%;
     height: 90px;
     margin: 30px;
-    color: red;
+    margin-left: 50%;
     transform: scale(1.25);
     animation: 1800ms pulsate alternate infinite ease-in-out;
 }
 
 .heart:before,
 .heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
 }
 
 @keyframes pulsate {
@@ -1150,17 +1246,15 @@ small {
 
 blockquote {
     padding: 2%;
-    font-style: italic;
     line-height: 145%;
     position: relative;
     margin-top: 40px;
-    font-size: 17px;
+    font-size: 18px;
     color: #fff;
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/slideshow5.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
+    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
     background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
     background-size: cover;
-    height: 20vh;
-    opacity: 0.6;
+    height: 28vh;
 }
 
 blockquote::before {
