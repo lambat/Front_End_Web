@@ -1714,6 +1714,47 @@ li .txt {
 /* ------------------------------------- */
 
 
+/* 		   PANDA ANIMATION 	        	  	 */
+
+
+/* ------------------------------------- */
+
+#road {
+  border-bottom: 10px dashed black;
+}
+
+#runner {
+  background-image: url(../images/spritesheet.png);
+  width: 250px;
+  height: 350px;
+  animation: walk 1s steps(6) infinite, forward 5s linear infinite;
+}
+
+@keyframes walk {
+
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: 3000px;
+  }
+}
+
+@keyframes forward {
+
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(1200px);
+  }
+}
+
+/* ------------------------------------- */
+
+
 /* 		           Form   	        	  	 */
 
 
