@@ -1,99 +1,102 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
 
+
 /*
-  - this applies to any screen sizes under 500px
-  - if you leave the width off, sections will automatically fill the full page width
+- this applies to any screen sizes under 400px
 */
 
 
 /* ------------------------------------- */
 
 
-/* 		      Heading   	        	  			 */
+/* 		      Heading   	        	  		 */
 
 
 /* ------------------------------------- */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box; /*Resets the size of the entire page.*/
 }
 
 html,
-body  {
-    background-color: #fff;
-    font-family: 'Lato', 'Arial';
-    font-weight: 300;
-    font-size: 15px;
-    overflow-x: hidden;
-	  scroll-behavior: smooth;
+body {
+background-color: #fff;       /*This sets the background colour of the entire body in the webpage to be white and sets the font-family, font-size etc. This acts as a default if these settings have not been specified.*/
+font-family: 'Lato', 'Arial';
+font-weight: 300;
+font-size: 15px;
+overflow-x: hidden;           /*The CSS overflow property specifies whether to clip content or to add scrollbars when the content of an element is too big to fit in a specified area. */
+scroll-behavior: smooth;      /*This is feature which sets the scrolling behaviour to be smooth i.e when navigating to different sections of a page, it will scroll in a smooth manner similar to an animation.*/
 }
 
 header {
-    background-color: #ddd;
+background-color: #ddd;
 }
 
-h1, h2, h3 {
-    font-weight: 300;
-    text-transform: uppercase;
-	  text-align: center;
+h1,
+h2,
+h3 {
+font-weight: 300;
+text-transform: uppercase; /*This sets the text to have all uppercase letters.*/
+text-align: center;
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 100%;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-	  background-color: #ccc;
-	  font-family: calibri, helvetica, sans-serif;
+margin-top: 10px;
+margin-bottom: 20px;
+color: #fff;
+font-size: 100%;
+word-spacing: 4px;
+letter-spacing: 1px;
+background-color: #ccc;
+font-family: calibri, helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 80%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-	  margin-top: 10px;
-    margin-bottom: 20px;
+font-size: 80%;
+word-spacing: 2px;
+text-align: center;
+margin-bottom: 30px;
+letter-spacing: 1px;
+margin-top: 10px;
+margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
-    color: #000080;
+font-size: 110%;
+margin-bottom: 15px;
+color: #000080;
 }
 
 h2:after {
-    display: block;
-    height: 2px;
-    background-color: #000080;
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    content: " ";
+display: block;
+height: 2px;
+background-color: #000080;
+width: 100px;
+margin: 0 auto;
+margin-top: 30px;
+content: " ";
 }
 
 .logo {
-    width: 50px;
-	  text-align: center;
+width: 50px;
+text-align: center;
 }
 
 a:link {
-	color: #fff;
-	text-decoration: none;
+color: #fff;
+text-decoration: none;
 }
 
 a:visited {
-	color: #fff;
+color: #fff;
 }
 
 #welcome {
-  background-color: #000080;
+background-color: #000080;
 }
+
 
 /* ------------------------------------- */
 
@@ -104,225 +107,216 @@ a:visited {
 /* ------------------------------------- */
 
 nav {
-	text-align: center;
-	top: 20em;
-	width: 10%;
-	background-color: #000;
-	opacity: 0.6;
-	color: #ddd;
-  left: 0px;
-  position: fixed;
-  display: block;
+text-align: center;
+top: 20em;
+width: 10%;
+background-color: #000;
+opacity: 0.6;
+color: #ddd;
+left: 0px;
+position: fixed; /*CSS for the nav menu and the position is fixed so the nav appears wherever the user scrolls to on the webpage. */
+display: block;
 }
 
 nav ul {
-	text-align: center;
-	list-style-type: none;
-	display: none;
-  font-size: 10px;
+text-align: center;
+list-style-type: none;
+display: none;
+font-size: 10px;
 }
 
 nav li {
-	padding: 5px;
+padding: 5px;
 }
 
 nav a:hover {
-	display:block;
-	text-decoration: none;
+display: block;
+text-decoration: none;
 }
 
 ul {
-	text-decoration: none;
-	list-style-type: none;
+text-decoration: none;
+list-style-type: none;
 }
 
 #menu {
-  padding: .1em;
-  background: #fff;   /*#menu is the hamburger icon */
-  display: block;
+padding: .1em;
+background: #fff;
+display: block;
 }
 
 #nav-menu {
- background: #000;
- min-width: 75px;
+background: #000;
+min-width: 75px;
 }
 
-#navnav{
- display:block;
+#navnav {
+display: block;
 }
 
 .show-menu {
-  display: block;
+display: block;
 }
 
 main {
-	max-width: 800px;
-  margin-left: 30%;
+max-width: 800px;
+margin-left: 30%;
 }
 
 .photo {
-	width: auto;
-  height: auto;
+width: auto;
+height: auto;
 }
 
 .slider-holder {
-  width: 200px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  bottom: 50px;
-  text-align: center;
-  overflow: hidden;
+width: 200px;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+bottom: 50px;
+text-align: center;
+overflow: hidden;
 }
 
 .image-holder {
-  width: 2400px;
-  height: 400px;
-  clear: both;
-  position: relative;
-  transition: left 2s;
+width: 2400px;
+height: 400px;
+clear: both;
+position: relative;
+transition: left 2s;
 }
 
 .slider-image {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  width: 600px;
-  height: 200px;
-  animation: slide 30s infinite;
+float: left;
+margin: 0px;
+padding: 0px;
+position: relative;
+width: 600px;
+height: 200px;
+animation: slide 30s infinite;
 }
 
 .button-holder {
-  position: relative;
-  top: 20px;
+position: relative;
+top: 20px;
 }
 
-#slider-image-1:target ~ .image-holder {
-  left: 0px;
-}
-
-#slider-image-2:target ~ .image-holder {
-  left: -800px;
-}
-
-#slider-image-3:target ~ .image-holder {
-  left: -1600px;
-}
-
-@keyframes slide
-{
-
-0%
-{
+#slider-image-1:target~.image-holder {
 left: 0px;
 }
 
-20%
-{
+#slider-image-2:target~.image-holder {  /*The element being linked to is the target element. The :target selector can be used to style the current active target element. This defines where each picture needs to be placed. */
+left: -800px;
+}
+
+#slider-image-3:target~.image-holder {
+left: -1600px;
+}
+
+@keyframes slide {
+0% {
 left: 0px;
 }
-
-25%
-{
+20% {
+left: 0px;
+}
+25% {
 left: -800px;
 }
-
-45%
-{
+45% {
 left: -800px;
 }
-
-50%
-{
+50% {
 left: -1600px;
 }
-
-70%
-{
+70% {
 left: -1600px;
 }
-
 }
 
-.btn-full:link, .btn-full:visited, input[type=submit] {
-    background-color: #000080;
-    color: #fff;
-    margin-right: 15px;
-    margin-top: 10px;
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+background-color: #000080;
+color: #fff;
+margin-right: 15px;
+margin-top: 10px;
 }
 
-.btn:link, .btn:visited, input[type=submit] {
-    display: inline-block;
-    padding: 2px 10px;
-    text-decoration: none;
-    border-radius: 200px;
-    margin-bottom: 10px;
+.btn:link,
+.btn:visited,
+input[type=submit] {
+display: inline-block;
+padding: 2px 10px;
+text-decoration: none;
+border-radius: 200px;
+margin-bottom: 10px;
 }
 
 .intro {
-  font-size: 10px;
-  line-height: 15px;
+font-size: 10px;
+line-height: 15px;
 }
 
 .glowing {
-  position: relative;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  list-style: none;
-  font-family: arial;
-  font-size: 1em;
-  letter-spacing: 5px;
-  color: #484848;
-  text-shadow: none;
-  animation: animate 1s infinite linear
+position: relative;
+top: 50px;
+left: 50%;
+transform: translate(-50%, -50%); /*Repositions an element in the horizontal and/or vertical directions*/
+display: flex; /*The flex property specifies the length of the item*/
+list-style: none;
+font-family: arial;
+font-size: 1em;
+letter-spacing: 5px;
+color: #484848;
+text-shadow: none;
+animation: animate 1s infinite linear /*Specifies the 'animate' keyframe to glow forever every second. Linear specifies an animation with the same speed from start to end*/
 }
 
 @keyframes animate {
-  0% {
-    color: #484848;
-    text-shadow: none;
-  }
-  18% {
-    color: #484848;
-    text-shadow: none;
-  }
-  20% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
-  }
-  30% {
-    color: #484848;
-    text-shadow: none;
-  }
-  35% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
-  }
-  70% {
-    color: #484848;
-    text-shadow: none;
-  }
-  85% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
-  }
-  90% {
-    color: #484848;
-    text-shadow: none;
-  }
-  100% {
-    color: #484848;
-    text-shadow: none;
-  }
+0% {
+color: #484848;
+text-shadow: none;
+}
+18% {
+color: #484848;
+text-shadow: none;
+}
+20% {
+color: #fff900;
+text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+}
+30% {
+color: #484848;
+text-shadow: none;
+}
+35% {
+color: #fff900;
+text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+}
+70% {
+color: #484848;
+text-shadow: none;
+}
+85% {
+color: #fff900;
+text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+}
+90% {
+color: #484848;
+text-shadow: none;
+}
+100% {
+color: #484848;
+text-shadow: none;
+}
 }
 
 .card {
-  display: none;
+display: none;
 }
+
 
 /* ------------------------------------- */
 
@@ -332,22 +326,22 @@ left: -1600px;
 
 /* ------------------------------------- */
 
-
 .svg {
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  line-height: 200px;
-  text-align: center;
-  border-radius: 50%;
-  margin-left: 1%;
-  margin-top: 60px;
+display: inline-block;
+height: 200px;
+width: 200px;
+line-height: 200px;
+text-align: center;
+border-radius: 50%;
+margin-left: 1%;
+margin-top: 60px;
 }
 
 #svg {
-  display: inline-block;
-  vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
+
 
 /* ------------------------------------- */
 
@@ -356,28 +350,19 @@ left: -1600px;
 
 
 /* ------------------------------------- */
+
 .box {
-  width: 100%;
-  display: block;
-  margin: 2% 0 2% 1.6%;
-  padding: 1%;
-  background-color: #F0F0F0;
-  text-align: center;
-  margin: 10px 1%;
-  margin-left: 3%;
-  font-size: 10px;
-  color: #000080;
+width: 100%;
+display: block;
+margin: 2% 0 2% 1.6%;
+padding: 1%;
+background-color: #F0F0F0;
+text-align: center;
+margin: 10px 1%;
+margin-left: 3%;
+font-size: 10px;
+color: #000080;
 }
-
-/* .hvr-icon-hang {
-  border-radius: 200px;
-  background-color: #000080;
-  color: #000;
-  padding: 5px 20px;
-  margin-bottom: 1px;
-  font-size: 6px;
-}
-
 
 /* ------------------------------------- */
 
@@ -388,65 +373,65 @@ left: -1600px;
 /* ------------------------------------- */
 
 .photo {
-	margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: auto;
+margin-right: auto;
 }
 
 .overlay {
-  position: relative;
-  left: 80px;
-  bottom: 20px;
-  background-color: #000080;
-  padding: 5px 5px;
-  font-size: 10px;
-  color: #fff;
-  opacity: 0.8;
-  font-family: tahoma;
+position: relative;
+left: 80px;
+bottom: 20px;
+background-color: #000080;
+padding: 5px 5px;
+font-size: 10px;
+color: #fff;
+opacity: 0.8;
+font-family: tahoma;
 }
 
 .overlay:hover {
-	background-color: #000;
-	color: #fff;
+background-color: #000;
+color: #fff;
 }
 
 .img3 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  vertical-align: center;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+vertical-align: center;
 }
 
 .img1 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  vertical-align: center;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+vertical-align: center;
 }
 
 .img2 {
-  width: 100px;
-  height: 100px;
+width: 100px;
+height: 100px;
 }
 
 .category_box {
-  position: relative;
-  width: 50%;
-  min-height: 1px;
-  margin-bottom: 20px;
+position: relative;
+width: 50%;
+min-height: 1px;
+margin-bottom: 20px;
 }
 
 #construction {
-  padding: 10px 20px;
-  right: 230px;
-  text-transform: uppercase;
-  line-height: 1;
-  color: #fff;
-  font-size: 10px;
-  letter-spacing: 1px;
-  background-color: red;
-  text-align: center;
+padding: 10px 20px;
+right: 230px;
+text-transform: uppercase;
+line-height: 1;
+color: #fff;
+font-size: 10px;
+letter-spacing: 1px;
+background-color: red;
+text-align: center;
 }
 
 
@@ -458,54 +443,53 @@ left: -1600px;
 
 /* ------------------------------------- */
 
-
 .pro_message {
-    padding: 5px 22px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1;
-    color: #fff;
-    font-size: 10px;
-    letter-spacing: 1px;
-    background-color: red;
-    position: absolute;
-    left: 0px;
-    color: #fff;
+padding: 5px 22px;
+font-weight: 600;
+text-transform: uppercase;
+line-height: 1;
+color: #fff;
+font-size: 10px;
+letter-spacing: 1px;
+background-color: red;
+position: absolute;
+left: 0px;
+color: #fff;
 }
 
 .currentlytrending_box {
-	position: relative;
-	width: 50%;
-	min-height: 1px;
-  text-align: center;
-  display: block;
-  margin-bottom: 20px;
+position: relative;
+width: 50%;
+min-height: 1px;
+text-align: center;
+display: block;
+margin-bottom: 20px;
 }
 
 .pricing {
-  color: #000;
-  text-align: center;
-  line-height: 29px;
-  font-size: 15px;
-  bottom: 10px;
-  /*padding-left: 50px;*/
+color: #000;
+text-align: center;
+line-height: 29px;
+font-size: 15px;
+bottom: 10px;
 }
 
 small {
-  font-size: 85%;
-  text-align: center;
+font-size: 85%;
+text-align: center;
 }
 
 .quantity {
-    display: inline;
-    padding: 6px 10px 7px;
-    margin-right: 10px;
+display: inline;
+padding: 6px 10px 7px;
+margin-right: 10px;
 }
 
 aside {
-  vertical-align: center;
-  margin-bottom: 50px;
+vertical-align: center;
+margin-bottom: 50px;
 }
+
 
 /* ------------------------------------- */
 
@@ -516,96 +500,103 @@ aside {
 /* ------------------------------------- */
 
 .heart {
-    width: 50%;
-    height: 90px;
-    margin: 30px;
-    margin-left: 30%;
-    transform: scale(1.25);
-    animation: 1800ms pulsate alternate infinite ease-in-out;
+width: 50%;
+height: 90px;
+margin: 30px;
+margin-left: 30%;
+transform: scale(1.25); /*Scales the image by 1.25*/
+animation: 1800ms pulsate alternate infinite ease-in-out; /*The heart will animate forever and will move in a certain direction every 1800 miliseconds.*/
 }
 
 .heart:before,
 .heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: red;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+position: absolute;
+content: "";
+left: 50px;
+top: 0;
+width: 50px;
+height: 80px;
+background: red;
+border-radius: 50px 50px 0 0;
+transform: rotate(-45deg);
+transform-origin: 0 100%;
 }
 
 .heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
+left: 0;
+transform: rotate(45deg);
+transform-origin: 100% 100%;
 }
 
 @keyframes pulsate {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.3); }
-    100% { transform: scale(1); }
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.3);
+}
+100% {
+transform: scale(1);
+}
 }
 
 blockquote {
-    padding: 2%;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-    font-size: 10px;
-    color: #fff;
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
-    background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
-    background-size: cover;
-    height: 28vh;
+padding: 2%;
+line-height: 145%;
+position: relative;
+margin-top: 40px;
+font-size: 10px;
+color: #fff;
+background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg); /*Represents a linear gradient of colours. Rgba specifies the opacity of the image */
+background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+background-size: cover; /*Covers an entire section with a background*/
+height: 28vh; /*Specifies the height of the background using vertical height*/
 }
 
 blockquote::before {
-    content: "\201C";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    color: #000080;
+content: "\201C";
+font-size: 500%;
+display: block;
+position: absolute;
+top: -5px;
+left: -5px;
+color: #000080;
 }
 
 cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
+font-size: 90%;
+margin-top: 25px;
+display: block;
 }
 
 cite img {
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
+height: 15px;
+border-radius: 50%;
+margin-right: 10px;
+vertical-align: middle;
 }
 
 .img4 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+width: 50px;
+height: 50px;
+border-radius: 50%;
 }
 
 .quote {
-  width: 10px;
+width: 10px;
 }
 
 .center {
-  text-align: center;
-  line-height: 40px;
-  font-size: 10px;
+text-align: center;
+line-height: 40px;
+font-size: 10px;
 }
 
 #map {
-  height: 200px;
-  width: 100%;
+height: 200px;
+width: 100%;
 }
+
 
 /* ------------------------------------- */
 
@@ -615,13 +606,11 @@ cite img {
 
 /* ------------------------------------- */
 
-
 li .txt {
-  width: 60%;
-  font-size: 16px;
-  text-align: center;
+width: 60%;
+font-size: 16px;
+text-align: center;
 }
-
 
 
 /* ------------------------------------- */
@@ -633,526 +622,520 @@ li .txt {
 /* ------------------------------------- */
 
 footer {
-    background-color: #333;
-    padding: 20px;
-    font-size: 50%;
+background-color: #333;
+padding: 20px;
+font-size: 50%;
 }
 
 .footer-nav {
-    list-style: none;
-    float: left;
-    text-align: center;
+list-style: none;
+float: left;
+text-align: center;
 }
 
 .social-links {
-    list-style: none;
-    text-align: center;
+list-style: none;
+text-align: center;
 }
 
 .footer-nav li,
 .social-links li {
-  display: inline-block;
-  margin-right: 10px;
-
+display: inline-block;
+margin-right: 10px;
 }
 
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
-    text-decoration: none; /* No underlining*/
-    border: 0; /* Get's rid of the previous a links that have a border */
-    color: #888;
-    transition: color 0.2s;
+text-decoration: none; /* No underlining*/
+border: 0; /* Get's rid of the previous a links that have a border */
+color: #888;
+transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-    color: #ddd;
-
+color: #ddd;
 }
 
 .fa-facebook-square,
 .fa-twitter-square,
 .fa-instagram {
-      transition: color 1s;
+transition: color 1s;
 }
 
 .fa-facebook-square:hover {
-    background: #3B5998;
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-    color: white;
-
+background: #3B5998;
+box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+color: white;
 }
 
-.fa-twitter-square:hover{
-    background: #55ACEE;
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-    color: white;
+.fa-twitter-square:hover {
+background: #55ACEE;
+box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+color: white;
 }
 
-.fa-instagram:hover{
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    color: white;
+.fa-instagram:hover {
+background: #d6249f;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+color: white;
 }
 
 footer p {
-    color: #ddd;
-    text-align: center;
+color: #ddd;
+text-align: center;
 }
 
+
 /* Awesome Font Button Animation */
+
 
 /* Icon Hang */
 
 @keyframes hvr-icon-hang {
-  0% {
-    transform: translateY(6px);
-  }
-  50% {
-    transform: translateY(2px);
-  }
-  100% {
-    transform: translateY(6px);
-  }
+0% {
+transform: translateY(6px);
+}
+50% {
+transform: translateY(2px);
+}
+100% {
+transform: translateY(6px);
+}
 }
 
 @keyframes hvr-icon-hang-sink {
-  100% {
-    transform: translateY(6px);
-  }
+100% {
+transform: translateY(6px);
 }
+}
+
 .hvr-icon-hang {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  padding-right: 2.2em;
-  transition-duration: 0.3s;
+display: inline-block;
+vertical-align: middle;
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px transparent;
+position: relative;
+padding-right: 2.2em;
+transition-duration: 0.3s;
 }
+
 .hvr-icon-hang:before {
-  content: "\f078";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
-  transform: translateZ(0);
+content: "\f078";
+position: absolute;
+right: 1em;
+padding: 0 1px;
+font-family: FontAwesome;
+transform: translateZ(0);
 }
-.hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
-  animation-name: hvr-icon-hang-sink, hvr-icon-hang;
-  animation-duration: .3s, 1.5s;
-  animation-delay: 0s, .3s;
-  animation-timing-function: ease-out, ease-in-out;
-  animation-iteration-count: 1, infinite;
-  animation-fill-mode: forwards;
-  animation-direction: normal, alternate;
+
+.hvr-icon-hang:hover:before,
+.hvr-icon-hang:focus:before,
+.hvr-icon-hang:active:before {
+animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+animation-duration: .3s, 1.5s;
+animation-delay: 0s, .3s;
+animation-timing-function: ease-out, ease-in-out;
+animation-iteration-count: 1, infinite;
+animation-fill-mode: forwards;
+animation-direction: normal, alternate;
 }
+
 
 /* END FIRST BREAKPOINT */
 
-/* SECOND BREAKPOINT (MEDIUM SIZE) */
-@media screen and (min-width: 400px) {
-  header {
-      background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
-      background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
-      background-size: cover;
-      height: 60vh;
-  }
 
-  #navnav{
-	display:none;
+/* SECOND BREAKPOINT (MEDIUM SIZE) */
+
+@media screen and (min-width: 400px) {
+
+header {
+background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png);
+background-attachment: fixed;
+background-size: cover;
+height: 60vh;
+}
+
+#navnav {
+display: none;
 }
 
 nav ul {
-	display:block;
-  font-size: 18px;
+display: block;
+font-size: 18px;
 }
 
 nav {
-	text-align: center;
-	position: fixed;
-	top: 17em;
-	width: 10%;
-	background-color: #000;
-	opacity: 0.6;
-	color: #ddd;
-  left: 0px;
+text-align: center;
+position: fixed;
+top: 17em;
+width: 10%;
+background-color: #000;
+opacity: 0.6;
+color: #ddd;
+left: 0px;
 }
 
 #nav-menu {
- background: #000;
- min-width: 75px;
+background: #000;
+min-width: 75px;
 }
 
-h1  {
-    font-size: 2em;
+h1 {
+font-size: 2em;
 }
 
 main {
-    width: 70%;
-    margin: 0 auto;
-  }
+width: 70%;
+margin: 0 auto;
+}
 
- body {
-  background: #fff;
+body {
+background: #fff;
 }
 
 h2:after {
-   display: block;
-   height: 2px;
-   background-color: #000080;
-   width: 100px;
-   margin: 0 auto;
-   margin-top: 30px;
-   content: " ";
+display: block;
+height: 2px;
+background-color: #000080;
+width: 100px;
+margin: 0 auto;
+margin-top: 30px;
+content: " ";
 }
 
 .slider-holder {
-  width: 700px;
-  height: 500px;
-  text-align: center;
-  overflow: hidden;
-  padding-top: 10px;
+width: 700px;
+height: 500px;
+text-align: center;
+overflow: hidden;
+padding-top: 10px;
 }
 
 .image-holder {
-  width: 2400px;
-  height: 300px;
-  clear: both;
-  position: relative;
-  transition: left 2s;
+width: 2400px;
+height: 300px;
+clear: both;
+position: relative;
+transition: left 2s;
 }
 
 .slider-image {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  width: 800px;
-  height: 300px;
+float: left;
+margin: 0px;
+padding: 0px;
+position: relative;
+width: 800px;
+height: 300px;
 }
 
 .button-holder {
-  position: relative;
-  top: -20px;
+position: relative;
+top: -20px;
 }
 
-#slider-image-1:target ~ .image-holder {
+#slider-image-1:target~.image-holder {
+left: 0px;
+}
+
+#slider-image-2:target~.image-holder {
+left: -800px;
+}
+
+#slider-image-3:target~.image-holder {
+left: -1600px;
+}
+
+@keyframes slide {
+0% {
   left: 0px;
 }
-
-#slider-image-2:target ~ .image-holder {
+20% {
+  left: 0px;
+}
+25% {
   left: -800px;
 }
-
-#slider-image-3:target ~ .image-holder {
+45% {
+  left: -800px;
+}
+50% {
   left: -1600px;
 }
-
-@keyframes slide
-{
-
-0%
-{
-left: 0px;
+70% {
+  left: -1600px;
 }
-
-20%
-{
-left: 0px;
-}
-
-25%
-{
-left: -800px;
-}
-
-45%
-{
-left: -800px;
-}
-
-50%
-{
-left: -1600px;
-}
-
-70%
-{
-left: -1600px;
-}
-
 }
 
 #welcome {
-  background-color: #000080;
+background-color: #000080;
 }
 
 #menu {
-  padding: 2em;
-  background: #000;   /*#menu is the hamburger icon */
-  display: none;
+padding: 2em;
+background: #000;
+display: none;
 }
 
 #nav-menu {
- background: #000;
- min-width: 120px;
+background: #000;
+min-width: 120px;
 }
 
 .list-menu {
-	display: block;
+display: block;
 }
 
 .show-menu {
-  display: block;
+display: block;
 }
 
 .img {
-  width: 200px;
-  height: auto;
+width: 200px;
+height: auto;
 }
 
 .img1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+width: 200px;
+height: 200px;
+border-radius: 50%;
 }
 
 .img3 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+width: 200px;
+height: 200px;
+border-radius: 50%;
 }
 
 .img2 {
-  width: 200px;
-  height: 200px;
+width: 200px;
+height: 200px;
 }
 
 .overlay {
-  position: relative;
-  left: 140px;
-  bottom: 20px;
-  background-color: #000080;
-  padding: 5px 10px;
-  font-size: 10px;
-  color: #fff;
-  opacity: 0.8;
-  font-family: tahoma;
+position: relative;
+left: 140px;
+bottom: 20px;
+background-color: #000080;
+padding: 5px 10px;
+font-size: 10px;
+color: #fff;
+opacity: 0.8;
+font-family: tahoma;
 }
 
 .pro_message {
-    padding: 10px 58px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1px;
-    background-color: red;
-    position: absolute;
-    left: 40px;
-    color: #fff;
+padding: 10px 58px;
+font-weight: 600;
+text-transform: uppercase;
+line-height: 1;
+color: #fff;
+font-size: 16px;
+letter-spacing: 1px;
+background-color: red;
+position: absolute;
+left: 40px;
+color: #fff;
 }
 
 aside {
-  float: left;
-  margin-bottom: 50px;
+float: left;
+margin-bottom: 50px;
 }
 
 .glowing {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  list-style: none;
-  font-family: arial;
-  font-size: 5em;
-  letter-spacing: 15px;
-  color: #484848;
-  text-shadow: none;
-  animation: animate 1s infinite linear
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+list-style: none;
+font-family: arial;
+font-size: 5em;
+letter-spacing: 15px;
+color: #484848;
+text-shadow: none;
+animation: animate 1s infinite linear
 }
 
 @keyframes animate {
-  0% {
-    color: #484848;
-    text-shadow: none;
-  }
-  18% {
-    color: #484848;
-    text-shadow: none;
-  }
-  20% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
-  }
-  30% {
-    color: #484848;
-    text-shadow: none;
-  }
-  35% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
-  }
-  70% {
-    color: #484848;
-    text-shadow: none;
-  }
-  85% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
-  }
-  90% {
-    color: #484848;
-    text-shadow: none;
-  }
-  100% {
-    color: #484848;
-    text-shadow: none;
-  }
+0% {
+  color: #484848;
+  text-shadow: none;
+}
+18% {
+  color: #484848;
+  text-shadow: none;
+}
+20% {
+  color: #fff900;
+  text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+}
+30% {
+  color: #484848;
+  text-shadow: none;
+}
+35% {
+  color: #fff900;
+  text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+}
+70% {
+  color: #484848;
+  text-shadow: none;
+}
+85% {
+  color: #fff900;
+  text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+}
+90% {
+  color: #484848;
+  text-shadow: none;
+}
+100% {
+  color: #484848;
+  text-shadow: none;
+}
 }
 
 .svg {
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  line-height: 200px;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 38%;
-  margin-top: 60px;
-  padding-top: 20px;
+display: inline-block;
+height: 200px;
+width: 200px;
+line-height: 200px;
+text-align: center;
+background-color: #fff;
+border-radius: 50%;
+margin-left: 38%;
+margin-top: 60px;
+padding-top: 20px;
 }
 
 #svg {
-  display: inline-block;
-  vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
 
 .heart {
-    width: 100%;
-    height: 90px;
-    margin: 30px;
-    margin-left: 50%;
-    transform: scale(1.25);
-    animation: 1800ms pulsate alternate infinite ease-in-out;
+width: 100%;
+height: 90px;
+margin: 30px;
+margin-left: 50%;
+transform: scale(1.25);
+animation: 1800ms pulsate alternate infinite ease-in-out;
 }
 
 .heart:before,
 .heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: red;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+position: absolute;
+content: "";
+left: 50px;
+top: 0;
+width: 50px;
+height: 80px;
+background: red;
+border-radius: 50px 50px 0 0;
+transform: rotate(-45deg);
+transform-origin: 0 100%;
 }
 
 .heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
+left: 0;
+transform: rotate(45deg);
+transform-origin: 100% 100%;
 }
 
 @keyframes pulsate {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.3); }
-    100% { transform: scale(1); }
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.3);
+}
+100% {
+  transform: scale(1);
+}
 }
 
-.social-links{
-    list-style: none;
-    float: right;
+.social-links {
+list-style: none;
+float: right;
 }
-
-}
-
 /* END FIRST BREAKPOINT */
-
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
 
 /* ------------------------------------- */
-
-
 /* 		      Heading   	        	  			 */
-
-
 /* ------------------------------------- */
 
 html,
-body  {
-    background-color: #fff;
-    font-family: 'Lato', 'Arial';
-    font-weight: 300;
-    font-size: 20px;
-    overflow-x: hidden;
-	  scroll-behavior: smooth;
+body {
+  background-color: #fff;
+  font-family: 'Lato', 'Arial';
+  font-weight: 300;
+  font-size: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png); /*represents a linear gradient of colours. Rgba specifies the opacity of the image */
-    background-attachment: fixed; /* Keeps the image still from moving to give it a nice effect*/
-    background-size: cover;
-    height: 90vh;
+  background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
 }
 
 #nav-menu {
-  min-width:135px;
+  min-width: 135px;
 }
 
-h1, h2, h3 {
-    font-weight: 300;
-    text-transform: uppercase;
-	  text-align: center;
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 250%;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-	  background-color: #ccc;
-	  font-family: calibri, helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 250%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  background-color: #ccc;
+  font-family: calibri, helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-	  margin-top: 10px;
-    margin-bottom: 20px;
-    color: #000080;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000080;
 }
 
 h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
-    color: #000080;
+  font-size: 110%;
+  margin-bottom: 15px;
+  color: #000080;
 }
 
 h2:after {
-    display: block;
-    height: 2px;
-    background-color: #000080;
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    content: " ";
+  display: block;
+  height: 2px;
+  background-color: #000080;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  content: " ";
 }
 
 #welcome {
@@ -1160,8 +1143,8 @@ h2:after {
 }
 
 .logo {
-    width: 100px;
-	  text-align: center;
+  width: 100px;
+  text-align: center;
 }
 
 .intro {
@@ -1181,16 +1164,16 @@ h2:after {
   width: 300px;
   height: 400px;
   background: #fff;
-  transform-style: preserve-3d;
-  transform: translate(-50%, -50%) perspective(2000px);
-  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
-  transition: 1s;
+  transform-style: preserve-3d; /*Specifies that child elements will preserve its 3D position*/
+  transform: translate(-50%, -50%) perspective(2000px); /*Defines how many pixels a 3D element is placed from the view. This property allows you to change the perspective on how 3D elements are viewed.*/
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, .5); /*Sets the rgba for how dark the shadow should be*/
+  transition: 1s; /*Sets the speed for flipping the card*/
   display: block;
 }
 
 .card:hover {
-  transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
-  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+  transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg); /*Rotates the card when the mouse hovers over it -10 degrees to create the effect of opening a card*/
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
 }
 
 .card:before {
@@ -1201,8 +1184,8 @@ h2:after {
   width: 100%;
   height: 5px;
   background: #000080;
-  transform-origin: bottom;
-  transform: skewX(-45deg);
+  transform-origin: bottom; /*Sets the starting position to transform*/
+  transform: skewX(-45deg); /*Skews the horizontal direction of the card before*/
 }
 
 .card:after {
@@ -1214,7 +1197,7 @@ h2:after {
   height: 100%;
   background: #000080;
   transform-origin: left;
-  transform: skewY(-45deg);
+  transform: skewY(-45deg); /*Skews the vertical direction of the card after it has been hovered onto*/
 }
 
 .card .imgBox {
@@ -1222,8 +1205,8 @@ h2:after {
   height: 100%;
   position: relative;
   transform-origin: left;
-  transition: 1s cubic-bezier(.15, 1.7, .84, .58);
-  z-index: 1;
+  transition: 1s cubic-bezier(.15, 1.7, .84, .58); /*When the card opens/closes it creates the effect of it bouncing*/
+  z-index: 1; /*Specifies the stack order of an element.*/
 }
 
 .card:hover .imgBox {
@@ -1269,54 +1252,49 @@ h2:after {
   top: -20px;
 }
 
-#slider-image-1:target ~ .image-holder {
+#slider-image-1:target~.image-holder {
   left: 0px;
 }
 
-#slider-image-2:target ~ .image-holder {
+#slider-image-2:target~.image-holder {
   left: -800px;
 }
 
-#slider-image-3:target ~ .image-holder {
+#slider-image-3:target~.image-holder {
   left: -1600px;
 }
 
-
 /* ------------------------------------- */
-
-
 /* 		      Body   	        	  			 */
-
-
 /* ------------------------------------- */
 
 nav {
-	text-align: center;
-	top: 7em;
-	width: 10%;
-	background-color: #000;
-	opacity: 0.6;
-	color: #ddd;
-	background: #000;
-	font-family: tahoma;
-	position: fixed;
+  text-align: center;
+  top: 7em;
+  width: 10%;
+  background-color: #000;
+  opacity: 0.6;
+  color: #ddd;
+  background: #000;
+  font-family: tahoma;
+  position: fixed;
   right: 0px;
-  display:block;
+  display: block;
 }
 
 nav li {
-	display: block;
-	padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
 nav a:hover {
-	display:block;
-	text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
 ul {
-	text-decoration: none;
-	list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .glowing {
@@ -1345,7 +1323,7 @@ ul {
   }
   20% {
     color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
   }
   30% {
     color: #484848;
@@ -1353,7 +1331,7 @@ ul {
   }
   35% {
     color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
   }
   70% {
     color: #484848;
@@ -1361,7 +1339,7 @@ ul {
   }
   85% {
     color: #fff900;
-    text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
   }
   90% {
     color: #484848;
@@ -1375,7 +1353,7 @@ ul {
 
 #menu {
   padding: 2em;
-  background: #000;   /*#menu is the hamburger icon */
+  background: #000;
   display: none;
 }
 
@@ -1388,64 +1366,52 @@ ul {
 }
 
 #get-name {
-background: white;
+  background: white;
   padding: 0.5em;
 }
 
 /* css for search bar  */
-
-
-  input[type=text] {
-      width: 50px;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      background-position: 10px 10px;
-      background-repeat: no-repeat;
-      padding: 12px 20px 12px 40px;
-      transition: width 0.5s ease-in-out;
-      transition: width 0.5s ease-in-out;
-      margin-top: 10px;
-  }
-
-  input[type=text]:focus {
-      width: 50%;
-  }
-
-  /* ------------------------------------- */
-
-
-  /* 		           SVG	  			           */
-
-
-  /* ------------------------------------- */
-
-
-  .svg {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    line-height: 200px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-left: 38%;
-    margin-top: 60px;
-    padding-top: 20px;
-  }
-
-  #svg {
-    display: inline-block;
-    vertical-align: middle;
-  }
+input[type=text] {
+  width: 50px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.5s ease-in-out;
+  margin-top: 10px;
+}
+input[type=text]:focus {
+  width: 50%;
+}
 
 /* ------------------------------------- */
+/* 		           SVG	  			           */
+/* ------------------------------------- */
 
+.svg {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 38%;
+  margin-top: 60px;
+  padding-top: 20px;
+}
 
+#svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ------------------------------------- */
 /* 		      About Us Section 		  			 */
-
-
 /* ------------------------------------- */
+
 .box {
   width: 20%;
   float: left;
@@ -1459,7 +1425,7 @@ background: white;
   margin-left: 3%;
 }
 
- .hvr-icon-hang {
+.hvr-icon-hang {
   left: 50px;
   margin-top: 100px;
   border-radius: 200px;
@@ -1470,15 +1436,11 @@ background: white;
 }
 
 /* ------------------------------------- */
-
-
 /* 		      Products Section 		  			 */
-
-
 /* ------------------------------------- */
 
 .photo {
-	margin-top: 1em;
+  margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 60px;
@@ -1497,8 +1459,8 @@ background: white;
 }
 
 .overlay:hover {
-	background-color: #000;
-	color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 .img3 {
@@ -1534,34 +1496,28 @@ background: white;
   text-align: center;
 }
 
-
 /* ------------------------------------- */
-
-
 /* 		      Currently Trending		  		 */
-
-
 /* ------------------------------------- */
-
 
 .pro_message {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    line-height: 1;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1px;
-    background-color: red;
-    position: absolute;
-    left: 90px;
-    color: #fff;
-    top: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: red;
+  position: absolute;
+  left: 90px;
+  color: #fff;
+  top: 20px;
 }
 
 .currentlytrending_box {
-	position: relative;
-	width: 50%;
-	min-height: 1px;
+  position: relative;
+  width: 50%;
+  min-height: 1px;
   text-align: center;
   display: block;
   margin-bottom: 20px;
@@ -1572,7 +1528,7 @@ aside {
   margin-bottom: 50px;
 }
 
- .pricing {
+.pricing {
   color: #000;
   text-align: center;
   line-height: 29px;
@@ -1586,37 +1542,23 @@ small {
 }
 
 .quantity {
-    display: inline;
-    padding: 6px 10px 7px;
-    margin-right: 10px;
-    width: 10%;
+  display: inline;
+  padding: 6px 10px 7px;
+  margin-right: 10px;
+  width: 10%;
 }
 
-/* input[type=text1],
-input[type=email],
-select,
-textarea{
-      width: 10%;
-      padding: 7px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-} */
-
 /* ------------------------------------- */
-
-
 /* 		  Feedback Section 		  			 */
-
-
 /* ------------------------------------- */
 
 .heart {
-    width: 100%;
-    height: 90px;
-    margin: 30px;
-    margin-left: 50%;
-    transform: scale(1.25);
-    animation: 1800ms pulsate alternate infinite ease-in-out;
+  width: 100%;
+  height: 90px;
+  margin: 30px;
+  margin-left: 50%;
+  transform: scale(1.25);
+  animation: 1800ms pulsate alternate infinite ease-in-out;
 }
 
 .heart:before,
@@ -1634,51 +1576,57 @@ textarea{
 }
 
 .heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 
 @keyframes pulsate {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.3); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 blockquote {
-    padding: 2%;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-    font-size: 18px;
-    color: #fff;
-    background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 28vh;
+  padding: 2%;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #fff;
+  background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 28vh;
 }
 
 blockquote::before {
-    content: "\201C";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    color: #000080;
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  color: #000080;
 }
 
 cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
 }
 
 cite img {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .quote {
@@ -1697,13 +1645,8 @@ cite img {
 }
 
 /* ------------------------------------- */
-
-
 /* 		   MISCELLANEOUS   	        	  	 */
-
-
 /* ------------------------------------- */
-
 
 li .txt {
   width: 60%;
@@ -1712,148 +1655,136 @@ li .txt {
 }
 
 /* ------------------------------------- */
-
-
 /* 		   PANDA ANIMATION 	        	  	 */
-
-
 /* ------------------------------------- */
 
 #road {
-  border-bottom: 10px dashed black;
+  border-bottom: 10px dashed black; /*Creates a dotted dash effect for a road*/
 }
-
 #runner {
-  background-image: url(../images/spritesheet.png);
+  background-image: url(../images/spritesheet.png); /*A spritesheet background is used for this animation*/
   width: 250px;
   height: 350px;
-  animation: walk 1s steps(6) infinite, forward 5s linear infinite;
+  animation: walk 1s steps(6) infinite, forward 5s linear infinite; /*Each character in the spritesheet walks for one second and take 6 steps. This is done infinitely and walks forward for 5 seconds*/
 }
-
 @keyframes walk {
-
   0% {
     background-position: 0px;
   }
-
   100% {
     background-position: 3000px;
   }
 }
-
 @keyframes forward {
-
   0% {
     transform: translateX(-100px);
   }
-
   100% {
     transform: translateX(1200px);
   }
 }
 
 /* ------------------------------------- */
-
-
 /* 		           Form   	        	  	 */
-
-
 /* ------------------------------------- */
 
-.btn:link, .btn:visited, input[type=submit] {
-    display: inline-block;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 200px;
-    margin-bottom: 10px;
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 200px;
+  margin-bottom: 10px;
 }
 
-.btn-ghost:link, .btn-ghost:visited {
-    border: 1px solid #000;
-    color: #fff;
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #000;
+  color: #fff;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #000;
+  background-color: #000;
 }
 
-.btn-ghost:link, .btn-ghost:visited {
-    border: 1px solid #000;
-    color: #fff;
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #000;
+  color: #fff;
 }
 
 .btn:hover,
 .btn:active,
 input[type=clearStorage]:hover,
 input[type=clearStorage]:active {
-    background-color: #000;
+  background-color: #000;
 }
 
 .btn-full:hover,
-.btn-full:active
-{
-    border: 1px solid #fff;
+.btn-full:active {
+  border: 1px solid #fff;
 }
 
-.btn-ghost:hover, .btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
 }
 
-.contact-form{
-    width: 90%;
-    margin: 0 auto;
+.contact-form {
+  width: 90%;
+  margin: 0 auto;
 }
 
 input[type=text],
 input[type=email],
 select,
-textarea{
-      width: 100%;
-      padding: 7px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
 textarea {
-    height: 100px;
+  height: 100px;
 }
 
 input[type=checkbox] {
-    margin: 10px 5px 10px 0;
+  margin: 10px 5px 10px 0;
 }
 
-*:focus {outline: none;} /* This is so that the outline on each border in a field is not visible */
+*:focus {
+  outline: none; /* This is so that the outline on each border in a field is not visible */
+}
+
 
 /* ------------------------------------- */
-
-
 /* 		      Footer   	        	  	 */
-
-
 /* ------------------------------------- */
 
-footer{
-    background-color: #333;
-    padding: 40px;
-    font-size: 80%;
+footer {
+  background-color: #333;
+  padding: 40px;
+  font-size: 80%;
 }
 
-.footer-nav{
-    list-style: none;
-    float: left;
+.footer-nav {
+  list-style: none;
+  float: left;
 }
 
-.social-links{
-    list-style: none;
-    float: right;
+.social-links {
+  list-style: none;
+  float: right;
 }
 
 .footer-nav li,
-.social-links li{
+.social-links li {
   display: inline-block;
   margin-right: 20px;
 }
@@ -1866,52 +1797,51 @@ footer{
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
-.social-links li a:visited{
-    text-decoration: none;
-    border: 0;
-    color: #888;
-    transition: color 0.2s;
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
-.footer-nav li a:active{
-    color: #ddd;
+.footer-nav li a:active {
+  color: #ddd;
 }
 
 .social-links li a:link,
-.social-links li a:visited{
-      font-size: 140%;
+.social-links li a:visited {
+  font-size: 140%;
 }
 
 .fa-facebook-square,
 .fa-twitter-square,
 .fa-instagram {
-      transition: color 1s;
+  transition: color 1s;
 }
 
-
-.fa-facebook-square:hover{
-    background: #3B5998;
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-    color: white;
-
+.fa-facebook-square:hover {
+  background: #3B5998;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  color: white;
 }
 
-.fa-twitter-square:hover{
-    background: #55ACEE;
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-    color: white;
+.fa-twitter-square:hover {
+  background: #55ACEE;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  color: white;
 }
 
-.fa-instagram:hover{
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    color: white;
+.fa-instagram:hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
 }
+
 footer p {
-    color: #ddd;
-    text-align: center;
-    margin-top: 20px;
+  color: #ddd;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .copyright {
@@ -1955,7 +1885,9 @@ footer p {
   font-family: FontAwesome;
   transform: translateZ(0);
 }
-.hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
+.hvr-icon-hang:hover:before,
+.hvr-icon-hang:focus:before,
+.hvr-icon-hang:active:before {
   animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   animation-duration: .3s, 1.5s;
   animation-delay: 0s, .3s;
@@ -1964,5 +1896,4 @@ footer p {
   animation-fill-mode: forwards;
   animation-direction: normal, alternate;
 }
-
 /* END SECOND BREAKPOINT */

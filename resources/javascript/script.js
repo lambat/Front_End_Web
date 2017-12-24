@@ -1,24 +1,22 @@
 "use strict";
 
-(function(){
+(function () {
 
   let menuButton = document.getElementById("navnav");
-  let navMenu = document.getElementById("test1");
+  let navMenu = document.getElementById("hamburger");
 
   menuButton.addEventListener("click", toggleMenu);
 
   let toggle = false; // hidden at first
-  function toggleMenu(){
+  function toggleMenu() {
     if (toggle) { // true: it's visible
       navMenu.classList.remove("show-menu"), // hide it
-      toggle = false
-    }
-    else { // false: it's hidden
+        toggle = false
+    } else { // false: it's hidden
       navMenu.classList.add("show-menu"), // show it
-      toggle = true
+        toggle = true
     }
   }
-
 
 
 })();
@@ -26,31 +24,34 @@
 let marker;
 
 function initMap() {
-  let location = {lat: 52.636576, lng: -1.113813};
+  let location = {
+    lat: 52.636576, //long and lats used for the location of the shop.
+    lng: -1.113813
+  };
 
   //This sets the default location for when the map is first loaded on the website.
   let map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
-      center: location
+    zoom: 16, //This defines how zoomed in the map should be at default.
+    center: location //The centre of the map is defines by the location used above with the lat and long of the shop.
   });
   let marker = new google.maps.Marker({
-      position: location,
-      map: map,
-      draggable: true,
-      animation: google.maps.Animation.DROP,
+    position: location, //The marker is positioned where the location is which is defined above.
+    map: map,
+    draggable: true, // The marker can be dragged anywhere.
+    animation: google.maps.Animation.DROP, //When the map is refreshed, the marker drops in and creates an animation.
   });
   marker.addListener('click', toggleBounce);
 }
 
-      function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-      }
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
 
-(function(){
+(function () {
 
   let myName = document.getElementById("my-name");
   let getName = document.getElementById("get-name");
@@ -61,23 +62,22 @@ function initMap() {
   // Displays the name in the console at this stage:
   console.log(`Name on page load: ${nameStored}`);
 
-  if(nameStored) {
+  if (nameStored) {
     // If there's a name in localStorage, use it:
     myName.innerHTML = `again ${nameStored}`;
     console.log(`Name stored is: ${nameStored}`);
-  }
-  else {
+  } else {
     // There's no name in localStorage:
     myName.innerHTML = "stranger";
     console.log(`No name stored`);
   }
 
-  function clearStorageFunc(){
+  function clearStorageFunc() {
     localStorage.clear();
   }
 
   function PerformGreeting() {
-    if(userName.value === "") {
+    if (userName.value === "") {
       alert("Please enter a name");
       userName.focus();
     }
@@ -98,17 +98,16 @@ function initMap() {
 
   if (typeof event === "undefined") {
     getName.onsubmit = PerformGreeting; // for Firefox
-  }
-  else {
+  } else {
     getName.addEventListener("submit", PerformGreeting);
     event.preventDefault();
   }
 
-  clearStorage.addEventListener("click",clearStorageFunc);
+  clearStorage.addEventListener("click", clearStorageFunc);
 
 }());
 
-(function(){
+(function () {
   // creates a new object called xhr
   // which will handle the API call
   let xhr = new XMLHttpRequest();
@@ -147,7 +146,7 @@ function initMap() {
     let k;
     let key;
     // loop through the result pages by pageid
-    for(key in data.query.pages) {
+    for (key in data.query.pages) {
       let tmp = data.query.pages[key];
       if (tmp.thumbnail) {
         img = `<img src="${tmp.thumbnail.source}" alt="${tmp.title}"> `;
@@ -166,7 +165,7 @@ function initMap() {
   }
 
   // the API call is triggered once the user submits a query
-  searchForm.addEventListener("submit", function(ev){
+  searchForm.addEventListener("submit", function (ev) {
     // complete the request url
     let wiki = baseURL + queryBox.value;
     // open a connection to the requested API url
@@ -176,7 +175,7 @@ function initMap() {
     // send off that request
     xhr.send();
     // if the response was ok, handle the response data using the gatherData function
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       // console.log(`Current readyState: ${xhr.readyState}`);
       if (xhr.readyState === 4 && xhr.status === 200) {
         // parse the response JSON
