@@ -550,7 +550,6 @@ color: #fff;
 background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg); /*Represents a linear gradient of colours. Rgba specifies the opacity of the image */
 background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
 background-size: cover; /*Covers an entire section with a background*/
-height: 28vh; /*Specifies the height of the background using vertical height*/
 }
 
 blockquote::before {
@@ -708,7 +707,7 @@ display: none;
 
 nav ul {
 display: block;
-font-size: 18px;
+font-size: 13px;
 }
 
 nav {
@@ -762,7 +761,7 @@ display: none;
 
 #nav-menu {
 background: #000;
-min-width: 120px;
+min-width: 100px;
 }
 
 .list-menu {
@@ -771,6 +770,37 @@ display: block;
 
 .show-menu {
 display: block;
+}
+
+.slider-holder {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 150px;
+}
+
+.image-holder {
+  width: 2400px;
+  height: 400px;
+  clear: both;
+  position: relative;
+  transition: left 2s;
+}
+
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 800px;
+  height: 400px;
+}
+
+.photo {
+  margin-top: 1em;
+  margin-bottom: 5em;
+  margin-right: 1px;
 }
 
 .img {
@@ -797,7 +827,7 @@ height: 200px;
 
 .overlay {
 position: relative;
-left: 140px;
+left: 120px;
 bottom: 20px;
 background-color: #000080;
 padding: 5px 10px;
@@ -808,17 +838,17 @@ font-family: tahoma;
 }
 
 .pro_message {
-padding: 10px 58px;
+padding: 10px 20px;
 font-weight: 600;
 text-transform: uppercase;
-line-height: 1;
 color: #fff;
 font-size: 16px;
 letter-spacing: 1px;
 background-color: red;
 position: absolute;
-left: 40px;
+left: 30px;
 color: #fff;
+top: 13px;
 }
 
 aside {
@@ -828,13 +858,13 @@ margin-bottom: 50px;
 
 .glowing {
 position: absolute;
-top: 70%;
-left: 50%;
+top: 68%;
+left: 53%;
 transform: translate(-50%, -50%);
 display: flex;
 list-style: none;
 font-family: arial;
-font-size: 5em;
+font-size: 2em;
 letter-spacing: 15px;
 color: #484848;
 text-shadow: none;
@@ -886,6 +916,18 @@ transform-origin: 0 100%;
 left: 0;
 transform: rotate(45deg);
 transform-origin: 100% 100%;
+}
+
+blockquote {
+padding: 2%;
+line-height: 145%;
+position: relative;
+margin-top: 40px;
+font-size: 10px;
+color: #fff;
+background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/testimonial.jpg); /*Represents a linear gradient of colours. Rgba specifies the opacity of the image */
+background-attachment: fixed; /* Keeps the image still from moving to give it a cool effect*/
+background-size: cover; /*Covers an entire section with a background*/
 }
 
 .social-links {
@@ -1182,20 +1224,6 @@ ul {
 input#ease {
     width: 100%;
 }
-/* input[type=text] {
-  width: 50px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  transition: width 0.5s ease-in-out;
-  margin-top: 10px;
-}
-input[type=text]:focus {
-  width: 50%;
-} */
 
 /* ------------------------------------- */
 /* 		           SVG	  			           */
