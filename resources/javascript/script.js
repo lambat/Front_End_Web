@@ -54,8 +54,8 @@ function toggleBounce() {
 //Google translate code
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
-    {pageLanguage: 'en'},
-    'google_translate_element'
+    {pageLanguage: 'en'}, //This sets the default to English.
+    'google_translate_element' //This calls the div function.
   );
 }
 
