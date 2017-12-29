@@ -32,6 +32,7 @@ The following link is for the Final design:
 - **Validated Webpages** - The index.html file passed the validation test for HTML with no major/cautionary errors along with the CSS. There are no JavaScript errors on the console either. The only CSS error is the scroll-behaviour: smooth which is not compatible with browsers but still works.
 - **Responsive Layout** - This website follows a responsive layout as explained from the Mobile First Approach. This is best represented by the title which reduces in size and readjusts, as well as the nav bar which collapses and hides the menu buttons creating a nice hamburger effect.
 - **cubic-bezier** - This is an animation feature which I learnt and explained quite thoroughly in my essay and I was adamant on using it. This can be seen in the About Us section where it creates the effect of opening and closing a card.
+- **Accessibility** - I have used colours in the website which contrast well with one another to make it readable for every user. I have also used a Google translator for people who may not understand English. There is also a sitemap for easy access around the website.
 
 # Obstacles
 - The biggest obstacle was getting the Google map API to load correctly on my Github page. After two days of trying every possible thing I could to fix it, I decided to validate my website and it picked the error which was a simple and easy error to make. The // was missing from the URL which was causing the Google Maps API to not load correctly.
@@ -62,3 +63,4 @@ These issues have now been addressed with all three working correctly.
 - Local storage of name - https://github.com/CTEC3905/03-lab-javascript-2/tree/clearStorage
 - Wikipedia API - https://github.com/CTEC3905/08-lab-json-ajax
 - CSS Slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/ Adapted the code to suit how I wanted the slider to look.
+- Google Translator - https://stackoverflow.com/questions/12243818/adding-google-translate-to-a-web-site

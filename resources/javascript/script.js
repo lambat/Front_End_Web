@@ -51,6 +51,14 @@ function toggleBounce() {
   }
 }
 
+//Google translate code
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'en'},
+    'google_translate_element'
+  );
+}
+
 (function () {
 
   let myName = document.getElementById("my-name");

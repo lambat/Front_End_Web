@@ -160,7 +160,7 @@ display: block;
 
 main {
 max-width: 800px;
-margin-left: 30%;
+margin-left: 21%;
 }
 
 .photo {
@@ -444,7 +444,7 @@ text-align: center;
 /* ------------------------------------- */
 
 .pro_message {
-padding: 5px 22px;
+padding: 5px 23px;
 font-weight: 600;
 text-transform: uppercase;
 line-height: 1;
@@ -453,7 +453,7 @@ font-size: 10px;
 letter-spacing: 1px;
 background-color: red;
 position: absolute;
-left: 0px;
+left: 15px;
 color: #fff;
 }
 
@@ -605,10 +605,45 @@ width: 100%;
 
 /* ------------------------------------- */
 
-li .txt {
+.wikipedia li .txt {
 width: 60%;
-font-size: 16px;
+font-size: 10px;
 text-align: center;
+}
+
+.wikipedia a:link {
+  color: #000;
+  font-size: 10px;
+}
+
+.wikipedia ul {
+  list-style-type: none;
+  display: table;
+  width: 90%;
+  border-spacing: 0 10px;
+}
+
+.wikipedia li {
+  display: table-row;
+}
+
+.wikipedia li strong, li .txt, li .langs {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wikipedia img {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.wikipedia li .txt {
+  width: 60%;
+  padding-right: 10px;
+}
+
+.wikipedia li:nth-child(even) {
+  background: #eee;
 }
 
 
@@ -692,7 +727,7 @@ text-align: center;
 
 /* SECOND BREAKPOINT (MEDIUM SIZE) */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 650px) {
 
 header {
 background-image: linear-gradient(rgba(2, 0, 2, 0), rgba(0, 2, 0, 0.1)), url(../images/shopview1.png);
@@ -858,7 +893,7 @@ margin-bottom: 50px;
 
 .glowing {
 position: absolute;
-top: 68%;
+top: 11%;
 left: 53%;
 transform: translate(-50%, -50%);
 display: flex;
@@ -930,6 +965,50 @@ background-attachment: fixed; /* Keeps the image still from moving to give it a 
 background-size: cover; /*Covers an entire section with a background*/
 }
 
+/* ------------------------------------- */
+/* 		   MISCELLANEOUS   	        	  	 */
+/* ------------------------------------- */
+
+.wikipedia li .txt {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+
+.wikipedia a:link {
+  color: #000;
+}
+
+.wikipedia ul {
+  list-style-type: none;
+  display: table;
+  width: 90%;
+  border-spacing: 0 10px;
+}
+
+.wikipedia li {
+  display: table-row;
+}
+
+.wikipedia li strong, li .txt, li .langs {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wikipedia img {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.wikipedia li .txt {
+  width: 60%;
+  padding-right: 10px;
+}
+
+.wikipedia li:nth-child(even) {
+  background: #eee;
+}
+
 .social-links {
 list-style: none;
 float: right;
@@ -939,7 +1018,7 @@ float: right;
 /* END FIRST BREAKPOINT */
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
 
 /* ------------------------------------- */
 /* 		      Heading   	        	  			 */
@@ -1146,6 +1225,7 @@ nav {
   text-align: center;
   top: 7em;
   width: 10%;
+  font-size: 20px;
   background-color: #000;
   opacity: 0.6;
   color: #ddd;
@@ -1173,13 +1253,13 @@ ul {
 
 .glowing {
   position: absolute;
-  top: 100%;
+  top: 10.9%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   list-style: none;
   font-family: arial;
-  font-size: 5em;
+  font-size: 4em;
   letter-spacing: 15px;
   color: #484848;
   text-shadow: none;
@@ -1508,6 +1588,40 @@ li .txt {
   width: 60%;
   font-size: 16px;
   text-align: center;
+}
+
+.wikipedia a:link {
+  color: #000;
+}
+
+.wikipedia ul {
+  list-style-type: none;
+  display: table;
+  width: 90%;
+  border-spacing: 0 10px;
+}
+
+.wikipedia li {
+  display: table-row;
+}
+
+.wikipedia li strong, li .txt, li .langs {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wikipedia img {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.wikipedia li .txt {
+  width: 60%;
+  padding-right: 10px;
+}
+
+.wikipedia li:nth-child(even) {
+  background: #eee;
 }
 
 /* ------------------------------------- */

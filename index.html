@@ -76,6 +76,7 @@
           <path fill-opacity="0.9" d="M106.62,64.968V14.124L62.614,39.546L106.62,64.968"/>
         </svg>
       </div>
+      <div id="google_translate_element"></div> <!--This is the Google Translator to change the language of the website-->
       <input id="ease" type="text" name="search" placeholder="Search.."> <!--This is for the search bar-->
       <h1 id="welcome">Hello & Welcome To Our Website <span id="my-name"></span>!</h1>
       <form id="get-name" action="#" method="post">
@@ -252,7 +253,9 @@
         <input id="wikiQuery" type="text" placeholder="DIY">
         <input type="submit"> <!--This is the Wikipedia API where an external JSON is called upon.-->
       </form>
+      <div class="wikipedia">
       <ul id="demo"></ul>
+    </div>
       <h1><a id="contactus">Contact Us</a></h1>
       <div id="runner"></div>
       <div id="road"></div>
@@ -315,6 +318,7 @@
     </footer>
     <script src="resources/javascript/script.js"></script> <!--JavaScipt files which are called upon.-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ_hdBAn1wZ4JmPjO94uE20Aq-5PN50-M&callback=initMap"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!--https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap -->
   </body>
 </html>
